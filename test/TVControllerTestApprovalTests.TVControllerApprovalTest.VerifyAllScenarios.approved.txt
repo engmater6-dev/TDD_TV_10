@@ -2,39 +2,29 @@ TVController scenarios
 
 
 [0] = OneDigitWithOk:
-현재 설정하는 채널 : 1
 setCH called with: 1
 
 [1] = TwoDigitAutoSetCh:
-현재 설정하는 채널 : 12
 setCH called with: 12
 
 [2] = ThreeDigitInput:
-현재 설정하는 채널 : 12
 setCH called with: 12
-현재 설정하는 채널 : 3
 setCH called with: 3
 
 [3] = LeadingZeroTwoDigit:
 setCH called with: 1
-현재 설정하는 채널 : 1
 
 [4] = FourDigitInput:
-현재 설정하는 채널 : 12
 setCH called with: 12
-현재 설정하는 채널 : 34
 setCH called with: 34
 
 [5] = Boundary99:
-현재 설정하는 채널 : 99
 setCH called with: 99
 
 [6] = Boundary00:
 setCH called with: 0
-현재 설정하는 채널 : 0
 
 [7] = Boundary09:
 setCH called with: 9
-현재 설정하는 채널 : 9
 
 

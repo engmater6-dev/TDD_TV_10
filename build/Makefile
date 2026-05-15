@@ -171,6 +171,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named tvcontroller
+
+# Build rule for target.
+tvcontroller: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 tvcontroller
+.PHONY : tvcontroller
+
+# fast build rule for target.
+tvcontroller/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\tvcontroller.dir\build.make CMakeFiles/tvcontroller.dir/build
+.PHONY : tvcontroller/fast
+
+#=============================================================================
 # Target rules for targets named TunerTest
 
 # Build rule for target.
@@ -274,6 +287,30 @@ ApprovalTests/fast:
 	$(MAKE) $(MAKESILENT) -f _deps\approvaltests-build\ApprovalTests\CMakeFiles\ApprovalTests.dir\build.make _deps/approvaltests-build/ApprovalTests/CMakeFiles/ApprovalTests.dir/build
 .PHONY : ApprovalTests/fast
 
+src/TVChannelController.obj: src/TVChannelController.cpp.obj
+.PHONY : src/TVChannelController.obj
+
+# target to build an object file
+src/TVChannelController.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\tvcontroller.dir\build.make CMakeFiles/tvcontroller.dir/src/TVChannelController.cpp.obj
+.PHONY : src/TVChannelController.cpp.obj
+
+src/TVChannelController.i: src/TVChannelController.cpp.i
+.PHONY : src/TVChannelController.i
+
+# target to preprocess a source file
+src/TVChannelController.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\tvcontroller.dir\build.make CMakeFiles/tvcontroller.dir/src/TVChannelController.cpp.i
+.PHONY : src/TVChannelController.cpp.i
+
+src/TVChannelController.s: src/TVChannelController.cpp.s
+.PHONY : src/TVChannelController.s
+
+# target to generate assembly for a file
+src/TVChannelController.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\tvcontroller.dir\build.make CMakeFiles/tvcontroller.dir/src/TVChannelController.cpp.s
+.PHONY : src/TVChannelController.cpp.s
+
 test/TVControllerTest.obj: test/TVControllerTest.cpp.obj
 .PHONY : test/TVControllerTest.obj
 
@@ -367,6 +404,10 @@ help:
 	@echo ... gmock_main
 	@echo ... gtest
 	@echo ... gtest_main
+	@echo ... tvcontroller
+	@echo ... src/TVChannelController.obj
+	@echo ... src/TVChannelController.i
+	@echo ... src/TVChannelController.s
 	@echo ... test/TVControllerTest.obj
 	@echo ... test/TVControllerTest.i
 	@echo ... test/TVControllerTest.s

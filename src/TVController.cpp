@@ -1,62 +1,54 @@
 #include "TVController.h"
+#include "remoteKey.h"
 
-void TVController::setTunerCh() {
-  if (!processingCH.empty()) {
-    tuner->setCH(processingCH); // ITuner 인터페이스 호출
-    std::cout << "현재 설정하는 채널 : " << processingCH << std::endl;
-  }
-}
-
+// 숫자 버튼 채널 변경 (To Do List 1번)
 void TVController::pushButton(remoteKey key) {
   switch (key) {
   case remoteKey::KEY_0:
-    processingCH += "0";
+    controller_.pressNumber(0);
     break;
   case remoteKey::KEY_1:
-    processingCH += "1";
+    controller_.pressNumber(1);
     break;
   case remoteKey::KEY_2:
-    processingCH += "2";
+    controller_.pressNumber(2);
     break;
   case remoteKey::KEY_3:
-    processingCH += "3";
+    controller_.pressNumber(3);
     break;
   case remoteKey::KEY_4:
-    processingCH += "4";
+    controller_.pressNumber(4);
     break;
   case remoteKey::KEY_5:
-    processingCH += "5";
+    controller_.pressNumber(5);
     break;
   case remoteKey::KEY_6:
-    processingCH += "6";
+    controller_.pressNumber(6);
     break;
   case remoteKey::KEY_7:
-    processingCH += "7";
+    controller_.pressNumber(7);
     break;
   case remoteKey::KEY_8:
-    processingCH += "8";
+    controller_.pressNumber(8);
     break;
   case remoteKey::KEY_9:
-    processingCH += "9";
+    controller_.pressNumber(9);
     break;
 
   case remoteKey::KEY_OK:
-    // 확인 버튼 → 현재 버퍼를 채널로 설정
-    setTunerCh();
-    processingCH.clear();
-    return; // OK 버튼은 채널 설정 후 종료
-  }
+    controller_.pressConfirm(); // 1-1: 한자리 입력 + 확인
+    break;
 
-  // OK 입력 없이 2자리이면...
-  if (processingCH.size() == 2) {
-    if (processingCH[0] == '0') {
-      // '0'으로 시작하면 두 번째 숫자만 채널로 인식
-      std::string oneDigit(1, processingCH[1]);
-      tuner->setCH(oneDigit);
-      std::cout << "현재 설정하는 채널 : " << oneDigit << std::endl;
-    } else {
-      setTunerCh(); // 일반적인 2자리 채널
-    }
-    processingCH.clear();
+  case remoteKey::KEY_FAVORITE:
+    controller_.pressFavorite(); // To Do List 2번
+    break;
+
+  case remoteKey::KEY_NEXT_FAVORITE:
+    controller_.pressNextFavorite(); // To Do List 3번
+    break;
+
+  case remoteKey::KEY_OTHER:
+    controller_.pressOther(); // 버퍼 무효화
+    break;
   }
 }

@@ -1,86 +1,59 @@
-/**
- * Copyright 2020 by Samsung Electronics, Inc.,
- *
- * This software is the confidential and proprietary information
- * of Samsung Electronics, Inc. ("Confidential Information").  You
- * shall not disclose such Confidential Information and shall use
- * it only in accordance with the terms of the license agreement
- * you entered into with Samsung.
- */
-
-#ifndef TV_CONTROLLER_H
-#define TV_CONTROLLER_H
-
+#pragma once
 #include "ITuner.h"
+#include "TVChannelController.h"
 #include "remoteKey.h"
-#include <iostream>
-#include <string>
+
 
 class TVController {
-private:
-  ITuner *tuner;
-  std::string processingCH;
-
-  void setTunerCh() {
-    // 로그는 테스트의 결과가 절대 아닙니다. 로그가 있는 것을 테스트로
-    // 간주하지
-    // 마시기 바랍니다.
-    std::cout << "현재 설정하는 채널 : " << processingCH << std::endl;
-    tuner->setCH(processingCH);
-  }
+  TVChannelController controller_;
 
 public:
-  explicit TVController(ITuner *tuner) : tuner(tuner), processingCH("") {}
+  explicit TVController(ITuner &tuner) : controller_(tuner) {}
 
   void pushButton(remoteKey key) {
     switch (key) {
     case remoteKey::KEY_0:
-      processingCH += "0";
+      controller_.pressNumber(0);
       break;
     case remoteKey::KEY_1:
-      processingCH += "1";
+      controller_.pressNumber(1);
       break;
     case remoteKey::KEY_2:
-      processingCH += "2";
+      controller_.pressNumber(2);
       break;
     case remoteKey::KEY_3:
-      processingCH += "3";
+      controller_.pressNumber(3);
       break;
     case remoteKey::KEY_4:
-      processingCH += "4";
+      controller_.pressNumber(4);
       break;
     case remoteKey::KEY_5:
-      processingCH += "5";
+      controller_.pressNumber(5);
       break;
     case remoteKey::KEY_6:
-      processingCH += "6";
+      controller_.pressNumber(6);
       break;
     case remoteKey::KEY_7:
-      processingCH += "7";
+      controller_.pressNumber(7);
       break;
     case remoteKey::KEY_8:
-      processingCH += "8";
+      controller_.pressNumber(8);
       break;
     case remoteKey::KEY_9:
-      processingCH += "9";
+      controller_.pressNumber(9);
       break;
     case remoteKey::KEY_OK:
-      setTunerCh();
-      processingCH.clear();
-      return;
-    }
-
-    if (processingCH.size() == 2) {
-      if (processingCH[0] == '0') {
-        std::string oneDigit = std::string(1, processingCH[1]);
-        tuner->setCH(oneDigit);
-        std::cout << "현재 설정하는 채널 : " << oneDigit << std::endl;
-      } else {
-        setTunerCh(); // 일반적인 2자리 채널
-      }
-      processingCH.clear();
+      controller_.pressConfirm();
+      break;
+    case remoteKey::KEY_FAVORITE:
+      controller_.pressFavorite();
+      break;
+    case remoteKey::KEY_NEXT_FAVORITE:
+      controller_.pressNextFavorite();
+      break;
+    case remoteKey::KEY_OTHER:
+      controller_.pressOther();
+      break;
     }
   }
 };
-
-#endif // TV_CONTROLLER_H

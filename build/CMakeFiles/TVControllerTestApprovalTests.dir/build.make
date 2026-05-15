@@ -95,8 +95,9 @@ TVControllerTestApprovalTests_EXTERNAL_OBJECTS =
 
 TVControllerTestApprovalTests.exe: CMakeFiles/TVControllerTestApprovalTests.dir/test/TVControllerTestApprovalTests.cpp.obj
 TVControllerTestApprovalTests.exe: CMakeFiles/TVControllerTestApprovalTests.dir/build.make
-TVControllerTestApprovalTests.exe: lib/libgtest_main.a
+TVControllerTestApprovalTests.exe: libtvcontroller.a
 TVControllerTestApprovalTests.exe: _deps/approvaltests-build/ApprovalTests/libApprovalTests.a
+TVControllerTestApprovalTests.exe: lib/libgtest_main.a
 TVControllerTestApprovalTests.exe: lib/libgtest.a
 TVControllerTestApprovalTests.exe: CMakeFiles/TVControllerTestApprovalTests.dir/linkLibs.rsp
 TVControllerTestApprovalTests.exe: CMakeFiles/TVControllerTestApprovalTests.dir/objects1.rsp

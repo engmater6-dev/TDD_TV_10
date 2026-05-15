@@ -3,7 +3,6 @@
 #include "remoteKey.h"
 #include <gtest/gtest.h>
 
-
 // FakeTuner: 채널을 메모리에 저장
 class FakeTuner : public ITuner {
 private:
@@ -23,7 +22,7 @@ protected:
 
   void SetUp() override {
     tuner = std::make_unique<FakeTuner>();
-    ctrl = std::make_unique<TVController>(tuner.get());
+    ctrl = std::make_unique<TVController>(*tuner);
   }
 };
 

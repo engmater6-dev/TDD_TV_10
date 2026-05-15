@@ -118,6 +118,7 @@ CMakeFiles/TVControllerTestApprovalTests.dir/test/TVControllerTestApprovalTests.
  C:/DEV/1-15.TDD_TV_10/build/_deps/googletest-src/googletest/include/gtest/internal/gtest-string.h
  C:/DEV/1-15.TDD_TV_10/build/_deps/googletest-src/googletest/include/gtest/internal/gtest-type-util.h
  C:/DEV/1-15.TDD_TV_10/include/ITuner.h
+ C:/DEV/1-15.TDD_TV_10/include/TVChannelController.h
  C:/DEV/1-15.TDD_TV_10/include/TVController.h
  C:/DEV/1-15.TDD_TV_10/include/remoteKey.h
  C:/mingw64/include/c++/15.2.0/algorithm

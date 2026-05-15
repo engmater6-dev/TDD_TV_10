@@ -1,6 +1,12 @@
 [
 {
   "directory": "C:/DEV/1-15.TDD_TV_10/build",
+  "command": "C:\\mingw64\\bin\\g++.exe  @CMakeFiles/tvcontroller.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\tvcontroller.dir\\src\\TVChannelController.cpp.obj -c C:\\DEV\\1-15.TDD_TV_10\\src\\TVChannelController.cpp",
+  "file": "C:/DEV/1-15.TDD_TV_10/src/TVChannelController.cpp",
+  "output": "CMakeFiles/tvcontroller.dir/src/TVChannelController.cpp.obj"
+},
+{
+  "directory": "C:/DEV/1-15.TDD_TV_10/build",
   "command": "C:\\mingw64\\bin\\g++.exe  @CMakeFiles/TunerTest.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\TunerTest.dir\\test\\TunerTest.cpp.obj -c C:\\DEV\\1-15.TDD_TV_10\\test\\TunerTest.cpp",
   "file": "C:/DEV/1-15.TDD_TV_10/test/TunerTest.cpp",
   "output": "CMakeFiles/TunerTest.dir/test/TunerTest.cpp.obj"

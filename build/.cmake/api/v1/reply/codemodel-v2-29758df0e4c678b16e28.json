@@ -7,7 +7,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "Git::Git::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-Git__Git-Debug-618abc226054f731c45d.json",
+					"jsonFile" : "target-Git__Git-Debug-4445c15479f627aca49e.json",
 					"name" : "Git::Git",
 					"projectIndex" : 0
 				}
@@ -37,7 +37,8 @@
 					[
 						1,
 						2,
-						3
+						3,
+						8
 					]
 				},
 				{
@@ -161,7 +162,8 @@
 					[
 						1,
 						2,
-						3
+						3,
+						8
 					]
 				},
 				{
@@ -244,21 +246,21 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "TVControllerTest::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-TVControllerTest-Debug-1db6f9ec533a69464f4f.json",
+					"jsonFile" : "target-TVControllerTest-Debug-36db2e514f4be173e95e.json",
 					"name" : "TVControllerTest",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "TVControllerTestApprovalTests::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-TVControllerTestApprovalTests-Debug-91f35445c4ec83841336.json",
+					"jsonFile" : "target-TVControllerTestApprovalTests-Debug-8c1d42ece38b4bb19ee7.json",
 					"name" : "TVControllerTestApprovalTests",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "TunerTest::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-TunerTest-Debug-fcd626fee1e294dcfc6d.json",
+					"jsonFile" : "target-TunerTest-Debug-f1bb224f1a89d4598f80.json",
 					"name" : "TunerTest",
 					"projectIndex" : 0
 				},
@@ -289,6 +291,13 @@
 					"jsonFile" : "target-gtest_main-Debug-3574a6952ce9ce317543.json",
 					"name" : "gtest_main",
 					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "tvcontroller::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-tvcontroller-Debug-a52a2ea6a128dbac766e.json",
+					"name" : "tvcontroller",
+					"projectIndex" : 0
 				}
 			]
 		}

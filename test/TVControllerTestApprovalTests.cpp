@@ -22,7 +22,7 @@ TEST(TVControllerApprovalTest, VerifyAllScenarios) {
   // S1-1: 한 자리 입력 + OK
   {
     FakeTunerForApproval tuner;
-    TVController ctrl(&tuner);
+    TVController ctrl(tuner); // 수정된 부분
     std::ostringstream oss;
     auto oldBuf = std::cout.rdbuf(oss.rdbuf());
     ctrl.pushButton(remoteKey::KEY_1);
@@ -34,7 +34,7 @@ TEST(TVControllerApprovalTest, VerifyAllScenarios) {
   // S1-2: 두 자리 자동 변경
   {
     FakeTunerForApproval tuner;
-    TVController ctrl(&tuner);
+    TVController ctrl(tuner); // 수정된 부분
     std::ostringstream oss;
     auto oldBuf = std::cout.rdbuf(oss.rdbuf());
     ctrl.pushButton(remoteKey::KEY_1);
@@ -46,7 +46,7 @@ TEST(TVControllerApprovalTest, VerifyAllScenarios) {
   // S1-3: 세 자리 입력 (123 → 12 → 3)
   {
     FakeTunerForApproval tuner;
-    TVController ctrl(&tuner);
+    TVController ctrl(tuner); // 수정된 부분
     std::ostringstream oss;
     auto oldBuf = std::cout.rdbuf(oss.rdbuf());
     ctrl.pushButton(remoteKey::KEY_1);
@@ -60,7 +60,7 @@ TEST(TVControllerApprovalTest, VerifyAllScenarios) {
   // S1-4: Leading zero (01 → 1)
   {
     FakeTunerForApproval tuner;
-    TVController ctrl(&tuner);
+    TVController ctrl(tuner); // 수정된 부분
     std::ostringstream oss;
     auto oldBuf = std::cout.rdbuf(oss.rdbuf());
     ctrl.pushButton(remoteKey::KEY_0);
@@ -72,7 +72,7 @@ TEST(TVControllerApprovalTest, VerifyAllScenarios) {
   // S1-5: 네 자리 입력 (1234 → 12 → 34)
   {
     FakeTunerForApproval tuner;
-    TVController ctrl(&tuner);
+    TVController ctrl(tuner); // 수정된 부분
     std::ostringstream oss;
     auto oldBuf = std::cout.rdbuf(oss.rdbuf());
     ctrl.pushButton(remoteKey::KEY_1);
@@ -86,7 +86,7 @@ TEST(TVControllerApprovalTest, VerifyAllScenarios) {
   // S1-6: 경계값 99
   {
     FakeTunerForApproval tuner;
-    TVController ctrl(&tuner);
+    TVController ctrl(tuner); // 수정된 부분
     std::ostringstream oss;
     auto oldBuf = std::cout.rdbuf(oss.rdbuf());
     ctrl.pushButton(remoteKey::KEY_9);
@@ -98,7 +98,7 @@ TEST(TVControllerApprovalTest, VerifyAllScenarios) {
   // S1-7: 경계값 00
   {
     FakeTunerForApproval tuner;
-    TVController ctrl(&tuner);
+    TVController ctrl(tuner); // 수정된 부분
     std::ostringstream oss;
     auto oldBuf = std::cout.rdbuf(oss.rdbuf());
     ctrl.pushButton(remoteKey::KEY_0);
@@ -110,7 +110,7 @@ TEST(TVControllerApprovalTest, VerifyAllScenarios) {
   // S1-8: 경계값 09
   {
     FakeTunerForApproval tuner;
-    TVController ctrl(&tuner);
+    TVController ctrl(tuner); // 수정된 부분
     std::ostringstream oss;
     auto oldBuf = std::cout.rdbuf(oss.rdbuf());
     ctrl.pushButton(remoteKey::KEY_0);

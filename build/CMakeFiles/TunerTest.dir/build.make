@@ -95,6 +95,7 @@ TunerTest_EXTERNAL_OBJECTS =
 
 TunerTest.exe: CMakeFiles/TunerTest.dir/test/TunerTest.cpp.obj
 TunerTest.exe: CMakeFiles/TunerTest.dir/build.make
+TunerTest.exe: libtvcontroller.a
 TunerTest.exe: lib/libgtest_main.a
 TunerTest.exe: lib/libgmock.a
 TunerTest.exe: lib/libgtest.a

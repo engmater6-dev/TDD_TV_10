@@ -34,13 +34,13 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 38,
+				"line" : 43,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 39,
+				"line" : 44,
 				"parent" : 0
 			},
 			{
@@ -55,7 +55,7 @@
 			{
 				"command" : 3,
 				"file" : 0,
-				"line" : 46,
+				"line" : 50,
 				"parent" : 0
 			},
 			{
@@ -67,13 +67,13 @@
 			{
 				"command" : 4,
 				"file" : 0,
-				"line" : 27,
+				"line" : 25,
 				"parent" : 0
 			},
 			{
 				"command" : 5,
 				"file" : 0,
-				"line" : 40,
+				"line" : 45,
 				"parent" : 0
 			}
 		]
@@ -87,11 +87,15 @@
 	[
 		{
 			"backtrace" : 2,
-			"id" : "gtest_main::@1ea2dfc0605fe3ab2a3f"
+			"id" : "tvcontroller::@6890427a1f51a3e7e1df"
 		},
 		{
 			"backtrace" : 2,
 			"id" : "ApprovalTests::@32041db75bb8abe10c1a"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "gtest_main::@1ea2dfc0605fe3ab2a3f"
 		}
 	],
 	"compileGroups" : 
@@ -151,6 +155,10 @@
 	[
 		{
 			"backtrace" : 2,
+			"id" : "tvcontroller::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 2,
 			"id" : "gtest::@1ea2dfc0605fe3ab2a3f"
 		},
 		{
@@ -173,12 +181,17 @@
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "lib\\libgtest_main.a",
+				"fragment" : "libtvcontroller.a",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 2,
 				"fragment" : "_deps\\approvaltests-build\\ApprovalTests\\libApprovalTests.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "lib\\libgtest_main.a",
 				"role" : "libraries"
 			},
 			{
@@ -197,11 +210,15 @@
 	[
 		{
 			"backtrace" : 2,
-			"id" : "gtest_main::@1ea2dfc0605fe3ab2a3f"
+			"id" : "tvcontroller::@6890427a1f51a3e7e1df"
 		},
 		{
 			"backtrace" : 2,
 			"id" : "ApprovalTests::@32041db75bb8abe10c1a"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "gtest_main::@1ea2dfc0605fe3ab2a3f"
 		}
 	],
 	"name" : "TVControllerTestApprovalTests",

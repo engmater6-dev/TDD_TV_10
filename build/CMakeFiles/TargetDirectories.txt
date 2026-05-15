@@ -1,3 +1,4 @@
+C:/DEV/1-15.TDD_TV_10/build/CMakeFiles/tvcontroller.dir
 C:/DEV/1-15.TDD_TV_10/build/CMakeFiles/TunerTest.dir
 C:/DEV/1-15.TDD_TV_10/build/CMakeFiles/TVControllerTest.dir
 C:/DEV/1-15.TDD_TV_10/build/CMakeFiles/TVControllerTestApprovalTests.dir

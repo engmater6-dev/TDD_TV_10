@@ -117,6 +117,7 @@ CMakeFiles/TVControllerTestApprovalTests.dir/test/TVControllerTestApprovalTests.
   _deps/googletest-src/googletest/include/gtest/internal/gtest-string.h \
   _deps/googletest-src/googletest/include/gtest/internal/gtest-type-util.h \
   C:/DEV/1-15.TDD_TV_10/include/ITuner.h \
+  C:/DEV/1-15.TDD_TV_10/include/TVChannelController.h \
   C:/DEV/1-15.TDD_TV_10/include/TVController.h \
   C:/DEV/1-15.TDD_TV_10/include/remoteKey.h \
   C:/mingw64/include/c++/15.2.0/algorithm \
@@ -518,6 +519,8 @@ C:/mingw64/include/c++/15.2.0/exception:
 
 C:/mingw64/include/c++/15.2.0/debug/assertions.h:
 
+C:/mingw64/include/c++/15.2.0/cxxabi.h:
+
 C:/mingw64/x86_64-w64-mingw32/include/sec_api/stdlib_s.h:
 
 C:/mingw64/include/c++/15.2.0/bits/algorithmfwd.h:
@@ -537,10 +540,6 @@ _deps/googletest-src/googletest/include/gtest/internal/gtest-param-util.h:
 _deps/googletest-src/googletest/include/gtest/gtest-printers.h:
 
 _deps/googletest-src/googletest/include/gtest/gtest-matchers.h:
-
-C:/mingw64/x86_64-w64-mingw32/include/signal.h:
-
-_deps/approvaltests-src/ApprovalTests/reporters/WindowsReporters.h:
 
 _deps/googletest-src/googletest/include/gtest/gtest-death-test.h:
 
@@ -562,8 +561,6 @@ C:/mingw64/include/c++/15.2.0/bits/regex_error.h:
 
 C:/mingw64/include/c++/15.2.0/ctime:
 
-C:/mingw64/include/c++/15.2.0/cxxabi.h:
-
 C:/mingw64/include/c++/15.2.0/iterator:
 
 _deps/approvaltests-src/ApprovalTests/utilities/FileUtilsSystemSpecific.h:
@@ -574,15 +571,13 @@ C:/mingw64/include/c++/15.2.0/pstl/glue_algorithm_defs.h:
 
 C:/mingw64/include/c++/15.2.0/bits/ios_base.h:
 
-C:/mingw64/include/c++/15.2.0/bits/shared_ptr_atomic.h:
-
-C:/mingw64/include/c++/15.2.0/bits/memory_resource.h:
-
 _deps/approvaltests-src/ApprovalTests/utilities/ExceptionCollector.h:
 
 _deps/approvaltests-src/ApprovalTests/reporters/DefaultReporter.h:
 
 C:/mingw64/include/c++/15.2.0/chrono:
+
+C:/DEV/1-15.TDD_TV_10/include/TVChannelController.h:
 
 _deps/approvaltests-src/ApprovalTests/utilities/EmptyFileCreatorFactory.h:
 
@@ -658,10 +653,6 @@ _deps/googletest-src/googletest/include/gtest/internal/custom/gtest-printers.h:
 
 _deps/approvaltests-src/ApprovalTests/utilities/StringMaker.h:
 
-C:/mingw64/include/c++/15.2.0/bits/range_access.h:
-
-_deps/approvaltests-src/ApprovalTests/integrations/catch/Catch2Approvals.h:
-
 _deps/approvaltests-src/ApprovalTests/integrations/doctest/DocTestApprovals.h:
 
 C:/mingw64/x86_64-w64-mingw32/include/sec_api/string_s.h:
@@ -735,6 +726,18 @@ C:/mingw64/include/c++/15.2.0/bits/stl_algobase.h:
 C:/mingw64/include/c++/15.2.0/bits/stl_iterator_base_funcs.h:
 
 _deps/approvaltests-src/ApprovalTests/ApprovalUtils.h:
+
+C:/mingw64/x86_64-w64-mingw32/include/signal.h:
+
+_deps/approvaltests-src/ApprovalTests/reporters/WindowsReporters.h:
+
+_deps/approvaltests-src/ApprovalTests/integrations/catch/Catch2Approvals.h:
+
+C:/mingw64/include/c++/15.2.0/bits/range_access.h:
+
+C:/mingw64/include/c++/15.2.0/bits/memory_resource.h:
+
+C:/mingw64/include/c++/15.2.0/bits/shared_ptr_atomic.h:
 
 _deps/approvaltests-src/ApprovalTests/namers/FileNameSanitizerDisposer.h:
 

@@ -62,6 +62,7 @@ CMAKE_BINARY_DIR = C:\DEV\1-15.TDD_TV_10\build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
+all: CMakeFiles/tvcontroller.dir/all
 all: CMakeFiles/TunerTest.dir/all
 all: CMakeFiles/TVControllerTest.dir/all
 all: CMakeFiles/TVControllerTestApprovalTests.dir/all
@@ -70,6 +71,7 @@ all: _deps/approvaltests-build/all
 .PHONY : all
 
 # The main recursive "codegen" target.
+codegen: CMakeFiles/tvcontroller.dir/codegen
 codegen: CMakeFiles/TunerTest.dir/codegen
 codegen: CMakeFiles/TVControllerTest.dir/codegen
 codegen: CMakeFiles/TVControllerTestApprovalTests.dir/codegen
@@ -83,6 +85,7 @@ preinstall: _deps/approvaltests-build/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
+clean: CMakeFiles/tvcontroller.dir/clean
 clean: CMakeFiles/TunerTest.dir/clean
 clean: CMakeFiles/TVControllerTest.dir/clean
 clean: CMakeFiles/TVControllerTestApprovalTests.dir/clean
@@ -218,9 +221,42 @@ _deps/googletest-build/googletest/clean: _deps/googletest-build/googletest/CMake
 .PHONY : _deps/googletest-build/googletest/clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/tvcontroller.dir
+
+# All Build rule for target.
+CMakeFiles/tvcontroller.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\tvcontroller.dir\build.make CMakeFiles/tvcontroller.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\tvcontroller.dir\build.make CMakeFiles/tvcontroller.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\DEV\1-15.TDD_TV_10\build\CMakeFiles --progress-num=85,86 "Built target tvcontroller"
+.PHONY : CMakeFiles/tvcontroller.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/tvcontroller.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\DEV\1-15.TDD_TV_10\build\CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/tvcontroller.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\DEV\1-15.TDD_TV_10\build\CMakeFiles 0
+.PHONY : CMakeFiles/tvcontroller.dir/rule
+
+# Convenience name for target.
+tvcontroller: CMakeFiles/tvcontroller.dir/rule
+.PHONY : tvcontroller
+
+# codegen rule for target.
+CMakeFiles/tvcontroller.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\tvcontroller.dir\build.make CMakeFiles/tvcontroller.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\DEV\1-15.TDD_TV_10\build\CMakeFiles --progress-num=85,86 "Finished codegen for target tvcontroller"
+.PHONY : CMakeFiles/tvcontroller.dir/codegen
+
+# clean rule for target.
+CMakeFiles/tvcontroller.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\tvcontroller.dir\build.make CMakeFiles/tvcontroller.dir/clean
+.PHONY : CMakeFiles/tvcontroller.dir/clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/TunerTest.dir
 
 # All Build rule for target.
+CMakeFiles/TunerTest.dir/all: CMakeFiles/tvcontroller.dir/all
 CMakeFiles/TunerTest.dir/all: _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/all
 CMakeFiles/TunerTest.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all
 CMakeFiles/TunerTest.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all
@@ -231,7 +267,7 @@ CMakeFiles/TunerTest.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest
 
 # Build rule for subdir invocation for target.
 CMakeFiles/TunerTest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\DEV\1-15.TDD_TV_10\build\CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\DEV\1-15.TDD_TV_10\build\CMakeFiles 10
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/TunerTest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\DEV\1-15.TDD_TV_10\build\CMakeFiles 0
 .PHONY : CMakeFiles/TunerTest.dir/rule
@@ -255,6 +291,7 @@ CMakeFiles/TunerTest.dir/clean:
 # Target rules for target CMakeFiles/TVControllerTest.dir
 
 # All Build rule for target.
+CMakeFiles/TVControllerTest.dir/all: CMakeFiles/tvcontroller.dir/all
 CMakeFiles/TVControllerTest.dir/all: _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/all
 CMakeFiles/TVControllerTest.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all
 CMakeFiles/TVControllerTest.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all
@@ -265,7 +302,7 @@ CMakeFiles/TVControllerTest.dir/all: _deps/googletest-build/googletest/CMakeFile
 
 # Build rule for subdir invocation for target.
 CMakeFiles/TVControllerTest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\DEV\1-15.TDD_TV_10\build\CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\DEV\1-15.TDD_TV_10\build\CMakeFiles 10
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/TVControllerTest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\DEV\1-15.TDD_TV_10\build\CMakeFiles 0
 .PHONY : CMakeFiles/TVControllerTest.dir/rule
@@ -289,6 +326,7 @@ CMakeFiles/TVControllerTest.dir/clean:
 # Target rules for target CMakeFiles/TVControllerTestApprovalTests.dir
 
 # All Build rule for target.
+CMakeFiles/TVControllerTestApprovalTests.dir/all: CMakeFiles/tvcontroller.dir/all
 CMakeFiles/TVControllerTestApprovalTests.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all
 CMakeFiles/TVControllerTestApprovalTests.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all
 CMakeFiles/TVControllerTestApprovalTests.dir/all: _deps/approvaltests-build/ApprovalTests/CMakeFiles/ApprovalTests.dir/all
@@ -299,7 +337,7 @@ CMakeFiles/TVControllerTestApprovalTests.dir/all: _deps/approvaltests-build/Appr
 
 # Build rule for subdir invocation for target.
 CMakeFiles/TVControllerTestApprovalTests.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\DEV\1-15.TDD_TV_10\build\CMakeFiles 76
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\DEV\1-15.TDD_TV_10\build\CMakeFiles 78
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/TVControllerTestApprovalTests.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\DEV\1-15.TDD_TV_10\build\CMakeFiles 0
 .PHONY : CMakeFiles/TVControllerTestApprovalTests.dir/rule

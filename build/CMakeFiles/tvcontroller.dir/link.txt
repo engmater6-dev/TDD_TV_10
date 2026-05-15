@@ -1,0 +1,2 @@
+C:\mingw64\bin\ar.exe qc libtvcontroller.a CMakeFiles/tvcontroller.dir/src/TVChannelController.cpp.obj
+C:\mingw64\bin\ranlib.exe libtvcontroller.a

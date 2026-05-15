@@ -95,6 +95,7 @@ TVControllerTest_EXTERNAL_OBJECTS =
 
 TVControllerTest.exe: CMakeFiles/TVControllerTest.dir/test/TVControllerTest.cpp.obj
 TVControllerTest.exe: CMakeFiles/TVControllerTest.dir/build.make
+TVControllerTest.exe: libtvcontroller.a
 TVControllerTest.exe: lib/libgtest_main.a
 TVControllerTest.exe: lib/libgmock.a
 TVControllerTest.exe: lib/libgtest.a

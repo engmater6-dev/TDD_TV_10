@@ -9,42 +9,42 @@
         {
           "name": "OneDigitWithConfirm",
           "file": "C:\\DEV\\1-15.TDD_TV_10\\test\\TVControllerTest.cpp",
-          "line": 31
+          "line": 30
         },
         {
           "name": "TwoDigitAutoChange",
           "file": "C:\\DEV\\1-15.TDD_TV_10\\test\\TVControllerTest.cpp",
-          "line": 38
+          "line": 37
         },
         {
           "name": "ThreeDigitInput",
           "file": "C:\\DEV\\1-15.TDD_TV_10\\test\\TVControllerTest.cpp",
-          "line": 45
+          "line": 44
         },
         {
           "name": "LeadingZeroTwoDigit",
           "file": "C:\\DEV\\1-15.TDD_TV_10\\test\\TVControllerTest.cpp",
-          "line": 55
+          "line": 54
         },
         {
           "name": "FourDigitInput",
           "file": "C:\\DEV\\1-15.TDD_TV_10\\test\\TVControllerTest.cpp",
-          "line": 62
+          "line": 61
         },
         {
           "name": "BoundaryChannel99",
           "file": "C:\\DEV\\1-15.TDD_TV_10\\test\\TVControllerTest.cpp",
-          "line": 73
+          "line": 72
         },
         {
           "name": "BoundaryChannel00",
           "file": "C:\\DEV\\1-15.TDD_TV_10\\test\\TVControllerTest.cpp",
-          "line": 80
+          "line": 79
         },
         {
           "name": "BoundaryChannel09",
           "file": "C:\\DEV\\1-15.TDD_TV_10\\test\\TVControllerTest.cpp",
-          "line": 87
+          "line": 86
         }
       ]
     }
