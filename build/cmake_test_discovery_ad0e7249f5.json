@@ -1,0 +1,17 @@
+{
+  "tests": 1,
+  "name": "AllTests",
+  "testsuites": [
+    {
+      "name": "TVControllerApprovalTest",
+      "tests": 1,
+      "testsuite": [
+        {
+          "name": "CombinedVerifyAll",
+          "file": "C:\\DEV\\1-15.TDD_TV_10\\test\\TVControllerTestApprovalTests.cpp",
+          "line": 21
+        }
+      ]
+    }
+  ]
+}

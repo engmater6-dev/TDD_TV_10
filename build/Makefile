@@ -96,7 +96,7 @@ rebuild_cache/fast: rebuild_cache
 
 # Special rule for the target list_install_components
 list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Available install components are: \"gmock\" \"gtest\""
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Available install components are: \"Unspecified\" \"gmock\" \"gtest\""
 .PHONY : list_install_components
 
 # Special rule for the target list_install_components
@@ -197,6 +197,19 @@ TVControllerTest/fast:
 .PHONY : TVControllerTest/fast
 
 #=============================================================================
+# Target rules for targets named TVControllerTestApprovalTests
+
+# Build rule for target.
+TVControllerTestApprovalTests: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 TVControllerTestApprovalTests
+.PHONY : TVControllerTestApprovalTests
+
+# fast build rule for target.
+TVControllerTestApprovalTests/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TVControllerTestApprovalTests.dir\build.make CMakeFiles/TVControllerTestApprovalTests.dir/build
+.PHONY : TVControllerTestApprovalTests/fast
+
+#=============================================================================
 # Target rules for targets named gmock
 
 # Build rule for target.
@@ -248,6 +261,19 @@ gtest_main/fast:
 	$(MAKE) $(MAKESILENT) -f _deps\googletest-build\googletest\CMakeFiles\gtest_main.dir\build.make _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/build
 .PHONY : gtest_main/fast
 
+#=============================================================================
+# Target rules for targets named ApprovalTests
+
+# Build rule for target.
+ApprovalTests: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 ApprovalTests
+.PHONY : ApprovalTests
+
+# fast build rule for target.
+ApprovalTests/fast:
+	$(MAKE) $(MAKESILENT) -f _deps\approvaltests-build\ApprovalTests\CMakeFiles\ApprovalTests.dir\build.make _deps/approvaltests-build/ApprovalTests/CMakeFiles/ApprovalTests.dir/build
+.PHONY : ApprovalTests/fast
+
 test/TVControllerTest.obj: test/TVControllerTest.cpp.obj
 .PHONY : test/TVControllerTest.obj
 
@@ -271,6 +297,30 @@ test/TVControllerTest.s: test/TVControllerTest.cpp.s
 test/TVControllerTest.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\TVControllerTest.dir\build.make CMakeFiles/TVControllerTest.dir/test/TVControllerTest.cpp.s
 .PHONY : test/TVControllerTest.cpp.s
+
+test/TVControllerTestApprovalTests.obj: test/TVControllerTestApprovalTests.cpp.obj
+.PHONY : test/TVControllerTestApprovalTests.obj
+
+# target to build an object file
+test/TVControllerTestApprovalTests.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TVControllerTestApprovalTests.dir\build.make CMakeFiles/TVControllerTestApprovalTests.dir/test/TVControllerTestApprovalTests.cpp.obj
+.PHONY : test/TVControllerTestApprovalTests.cpp.obj
+
+test/TVControllerTestApprovalTests.i: test/TVControllerTestApprovalTests.cpp.i
+.PHONY : test/TVControllerTestApprovalTests.i
+
+# target to preprocess a source file
+test/TVControllerTestApprovalTests.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TVControllerTestApprovalTests.dir\build.make CMakeFiles/TVControllerTestApprovalTests.dir/test/TVControllerTestApprovalTests.cpp.i
+.PHONY : test/TVControllerTestApprovalTests.cpp.i
+
+test/TVControllerTestApprovalTests.s: test/TVControllerTestApprovalTests.cpp.s
+.PHONY : test/TVControllerTestApprovalTests.s
+
+# target to generate assembly for a file
+test/TVControllerTestApprovalTests.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TVControllerTestApprovalTests.dir\build.make CMakeFiles/TVControllerTestApprovalTests.dir/test/TVControllerTestApprovalTests.cpp.s
+.PHONY : test/TVControllerTestApprovalTests.cpp.s
 
 test/TunerTest.obj: test/TunerTest.cpp.obj
 .PHONY : test/TunerTest.obj
@@ -309,7 +359,9 @@ help:
 	@echo ... list_install_components
 	@echo ... rebuild_cache
 	@echo ... test
+	@echo ... ApprovalTests
 	@echo ... TVControllerTest
+	@echo ... TVControllerTestApprovalTests
 	@echo ... TunerTest
 	@echo ... gmock
 	@echo ... gmock_main
@@ -318,6 +370,9 @@ help:
 	@echo ... test/TVControllerTest.obj
 	@echo ... test/TVControllerTest.i
 	@echo ... test/TVControllerTest.s
+	@echo ... test/TVControllerTestApprovalTests.obj
+	@echo ... test/TVControllerTestApprovalTests.i
+	@echo ... test/TVControllerTestApprovalTests.s
 	@echo ... test/TunerTest.obj
 	@echo ... test/TunerTest.i
 	@echo ... test/TunerTest.s

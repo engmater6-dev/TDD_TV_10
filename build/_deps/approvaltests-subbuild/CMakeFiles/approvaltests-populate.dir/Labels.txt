@@ -1,0 +1,14 @@
+# Target labels
+ approvaltests-populate
+# Source files and their labels
+C:/DEV/1-15.TDD_TV_10/build/_deps/approvaltests-subbuild/CMakeFiles/approvaltests-populate
+C:/DEV/1-15.TDD_TV_10/build/_deps/approvaltests-subbuild/CMakeFiles/approvaltests-populate.rule
+C:/DEV/1-15.TDD_TV_10/build/_deps/approvaltests-subbuild/CMakeFiles/approvaltests-populate-complete.rule
+C:/DEV/1-15.TDD_TV_10/build/_deps/approvaltests-subbuild/approvaltests-populate-prefix/src/approvaltests-populate-stamp/approvaltests-populate-build.rule
+C:/DEV/1-15.TDD_TV_10/build/_deps/approvaltests-subbuild/approvaltests-populate-prefix/src/approvaltests-populate-stamp/approvaltests-populate-configure.rule
+C:/DEV/1-15.TDD_TV_10/build/_deps/approvaltests-subbuild/approvaltests-populate-prefix/src/approvaltests-populate-stamp/approvaltests-populate-download.rule
+C:/DEV/1-15.TDD_TV_10/build/_deps/approvaltests-subbuild/approvaltests-populate-prefix/src/approvaltests-populate-stamp/approvaltests-populate-install.rule
+C:/DEV/1-15.TDD_TV_10/build/_deps/approvaltests-subbuild/approvaltests-populate-prefix/src/approvaltests-populate-stamp/approvaltests-populate-mkdir.rule
+C:/DEV/1-15.TDD_TV_10/build/_deps/approvaltests-subbuild/approvaltests-populate-prefix/src/approvaltests-populate-stamp/approvaltests-populate-patch.rule
+C:/DEV/1-15.TDD_TV_10/build/_deps/approvaltests-subbuild/approvaltests-populate-prefix/src/approvaltests-populate-stamp/approvaltests-populate-test.rule
+C:/DEV/1-15.TDD_TV_10/build/_deps/approvaltests-subbuild/approvaltests-populate-prefix/src/approvaltests-populate-stamp/approvaltests-populate-update.rule

@@ -1,0 +1,12 @@
+TVController scenarios
+
+
+[0] = OneDigitWithOk:
+현재 설정하는 채널 : 1
+setCH called with: 1
+
+[1] = TwoDigitAutoSetCh:
+현재 설정하는 채널 : 12
+setCH called with: 12
+
+
