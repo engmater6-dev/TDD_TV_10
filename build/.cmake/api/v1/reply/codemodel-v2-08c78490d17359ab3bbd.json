@@ -244,21 +244,21 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "TVControllerTest::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-TVControllerTest-Debug-6204b0904f716a7c9e7f.json",
+					"jsonFile" : "target-TVControllerTest-Debug-1db6f9ec533a69464f4f.json",
 					"name" : "TVControllerTest",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "TVControllerTestApprovalTests::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-TVControllerTestApprovalTests-Debug-d0b7ae3b342e0dde47bf.json",
+					"jsonFile" : "target-TVControllerTestApprovalTests-Debug-91f35445c4ec83841336.json",
 					"name" : "TVControllerTestApprovalTests",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "TunerTest::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-TunerTest-Debug-999b3fd97ed3ce0b4312.json",
+					"jsonFile" : "target-TunerTest-Debug-fcd626fee1e294dcfc6d.json",
 					"name" : "TunerTest",
 					"projectIndex" : 0
 				},

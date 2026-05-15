@@ -9,4 +9,12 @@ setCH called with: 1
 현재 설정하는 채널 : 12
 setCH called with: 12
 
+[2] = ThreeDigitInput:
+현재 설정하는 채널 : 12
+setCH called with: 12
+
+[3] = LeadingZeroTwoDigit:
+setCH called with: 1
+현재 설정하는 채널 : 1
+
 

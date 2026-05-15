@@ -71,7 +71,13 @@ public:
     }
 
     if (processingCH.size() == 2) {
-      setTunerCh();
+      if (processingCH[0] == '0') {
+        std::string oneDigit = std::string(1, processingCH[1]);
+        tuner->setCH(oneDigit);
+        std::cout << "현재 설정하는 채널 : " << oneDigit << std::endl;
+      } else {
+        setTunerCh(); // 일반적인 2자리 채널
+      }
       processingCH.clear();
     }
   }

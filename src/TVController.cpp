@@ -47,9 +47,16 @@ void TVController::pushButton(remoteKey key) {
     return; // OK 버튼은 채널 설정 후 종료
   }
 
-  // OK 입력없이 2자리이면......
+  // OK 입력 없이 2자리이면...
   if (processingCH.size() == 2) {
-    setTunerCh();         // 2자리 숫자 입력으로 채널 설정
-    processingCH.clear(); // 입력 버퍼 초기화
+    if (processingCH[0] == '0') {
+      // '0'으로 시작하면 두 번째 숫자만 채널로 인식
+      std::string oneDigit(1, processingCH[1]);
+      tuner->setCH(oneDigit);
+      std::cout << "현재 설정하는 채널 : " << oneDigit << std::endl;
+    } else {
+      setTunerCh(); // 일반적인 2자리 채널
+    }
+    processingCH.clear();
   }
 }
