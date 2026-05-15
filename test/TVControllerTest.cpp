@@ -2,15 +2,19 @@
 #include "ITuner.h"
 #include "remoteKey.h"
 #include <gtest/gtest.h>
+#include <memory>
+#include <string>
 
 // FakeTuner: 채널을 메모리에 저장
 class FakeTuner : public ITuner {
 private:
-  std::string currentCH;
+  std::string currentCH = "0";
 
 public:
   void setCH(std::string ch) override { currentCH = ch; }
-  std::string seekCH() override { return ""; }
+  std::string seekCH() override {
+    return "7";
+  } // To Do list 4번: 검색 결과 Mock
   std::string getCurrentCH() override { return currentCH; }
 };
 
@@ -91,10 +95,66 @@ TEST_F(ControllerTest, BoundaryChannel09) {
 
 // S1-9: seekCH 호출 테스트
 TEST_F(ControllerTest, SeekCHCall) {
-  // 채널을 먼저 설정
   ctrl->pushButton(remoteKey::KEY_1);
   ctrl->pushButton(remoteKey::KEY_OK);
+  EXPECT_EQ("7", tuner->seekCH()); // Mock 결과
+}
 
-  // seekCH 호출 (현재는 "" 반환)
-  EXPECT_EQ("", tuner->seekCH());
+// S2-1: 선호 채널 추가/삭제
+TEST_F(ControllerTest, ToggleFavoriteChannel) {
+  ctrl->pushButton(remoteKey::KEY_5);
+  ctrl->pushButton(remoteKey::KEY_OK);
+  ctrl->pushButton(remoteKey::KEY_FAVORITE); // 추가
+  EXPECT_EQ(1u, ctrl->getController().getFavoriteChannels().size());
+
+  ctrl->pushButton(remoteKey::KEY_FAVORITE); // 삭제
+  EXPECT_TRUE(ctrl->getController().getFavoriteChannels().empty());
+}
+
+// S3-1: 선호 채널 이동
+TEST_F(ControllerTest, MoveToNextFavorite) {
+  ctrl->pushButton(remoteKey::KEY_1);
+  ctrl->pushButton(remoteKey::KEY_OK);
+  ctrl->pushButton(remoteKey::KEY_FAVORITE); // 1 추가
+
+  ctrl->pushButton(remoteKey::KEY_9);
+  ctrl->pushButton(remoteKey::KEY_OK);
+  ctrl->pushButton(remoteKey::KEY_FAVORITE); // 9 추가
+
+  ctrl->pushButton(remoteKey::KEY_1);
+  ctrl->pushButton(remoteKey::KEY_OK);
+  ctrl->pushButton(remoteKey::KEY_NEXT_FAVORITE); // → 9로 이동
+  EXPECT_EQ("9", tuner->getCurrentCH());
+}
+
+// S5: 업/다운 동작 (전체 채널 기준)
+TEST_F(ControllerTest, ChannelUpDownWithoutFavorites) {
+  ctrl->pushButton(remoteKey::KEY_0);
+  ctrl->pushButton(remoteKey::KEY_OK);
+
+  ctrl->pushButton(remoteKey::KEY_UP);
+  EXPECT_EQ("1", tuner->getCurrentCH());
+
+  ctrl->pushButton(remoteKey::KEY_DOWN);
+  EXPECT_EQ("0", tuner->getCurrentCH());
+}
+
+// S6: 업/다운 동작 (즐겨찾기 기준)
+TEST_F(ControllerTest, ChannelUpDownWithFavorites) {
+  ctrl->pushButton(remoteKey::KEY_2);
+  ctrl->pushButton(remoteKey::KEY_OK);
+  ctrl->pushButton(remoteKey::KEY_FAVORITE); // 2 추가
+
+  ctrl->pushButton(remoteKey::KEY_5);
+  ctrl->pushButton(remoteKey::KEY_OK);
+  ctrl->pushButton(remoteKey::KEY_FAVORITE); // 5 추가
+
+  ctrl->pushButton(remoteKey::KEY_2);
+  ctrl->pushButton(remoteKey::KEY_OK);
+
+  ctrl->pushButton(remoteKey::KEY_UP_FAVORITE); // → 5로 이동
+  EXPECT_EQ("5", tuner->getCurrentCH());
+
+  ctrl->pushButton(remoteKey::KEY_DOWN_FAVORITE); // → 2로 이동
+  EXPECT_EQ("2", tuner->getCurrentCH());
 }

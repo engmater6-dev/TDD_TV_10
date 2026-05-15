@@ -14,5 +14,9 @@ enum class remoteKey {
   KEY_OK,
   KEY_FAVORITE,
   KEY_NEXT_FAVORITE,
-  KEY_OTHER
+  KEY_OTHER,
+  KEY_UP,           // 추가
+  KEY_DOWN,         // 추가
+  KEY_UP_FAVORITE,  // 추가
+  KEY_DOWN_FAVORITE // 추가
 };

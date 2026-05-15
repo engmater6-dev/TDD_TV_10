@@ -1,7 +1,7 @@
 #include "TVController.h"
 #include "remoteKey.h"
 
-// 숫자 버튼 채널 변경 (To Do List 1번)
+// 리모컨 입력 처리
 void TVController::pushButton(remoteKey key) {
   switch (key) {
   case remoteKey::KEY_0:
@@ -40,11 +40,27 @@ void TVController::pushButton(remoteKey key) {
     break;
 
   case remoteKey::KEY_FAVORITE:
-    controller_.pressFavorite(); // To Do List 2번
+    controller_.pressFavorite(); // 2-1: 선호 채널 추가/삭제
     break;
 
   case remoteKey::KEY_NEXT_FAVORITE:
-    controller_.pressNextFavorite(); // To Do List 3번
+    controller_.pressNextFavorite(); // 3-1: 선호 채널 이동
+    break;
+
+  case remoteKey::KEY_UP:
+    controller_.pressUp(); // 5-1: 채널 업 (전체 채널 기준)
+    break;
+
+  case remoteKey::KEY_DOWN:
+    controller_.pressDown(); // 5-2: 채널 다운 (전체 채널 기준)
+    break;
+
+  case remoteKey::KEY_UP_FAVORITE:
+    controller_.pressUpFavorite(); // 6: 채널 업 (즐겨찾기 기준)
+    break;
+
+  case remoteKey::KEY_DOWN_FAVORITE:
+    controller_.pressDownFavorite(); // 6: 채널 다운 (즐겨찾기 기준)
     break;
 
   case remoteKey::KEY_OTHER:

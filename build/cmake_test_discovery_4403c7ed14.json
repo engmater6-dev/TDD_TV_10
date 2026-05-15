@@ -1,55 +1,75 @@
 {
-  "tests": 9,
+  "tests": 13,
   "name": "AllTests",
   "testsuites": [
     {
       "name": "ControllerTest",
-      "tests": 9,
+      "tests": 13,
       "testsuite": [
         {
           "name": "OneDigitWithConfirm",
           "file": "C:\\DEV\\1-15.TDD_TV_10\\test\\TVControllerTest.cpp",
-          "line": 30
+          "line": 34
         },
         {
           "name": "TwoDigitAutoChange",
           "file": "C:\\DEV\\1-15.TDD_TV_10\\test\\TVControllerTest.cpp",
-          "line": 37
+          "line": 41
         },
         {
           "name": "ThreeDigitInput",
           "file": "C:\\DEV\\1-15.TDD_TV_10\\test\\TVControllerTest.cpp",
-          "line": 44
+          "line": 48
         },
         {
           "name": "LeadingZeroTwoDigit",
           "file": "C:\\DEV\\1-15.TDD_TV_10\\test\\TVControllerTest.cpp",
-          "line": 54
+          "line": 58
         },
         {
           "name": "FourDigitInput",
           "file": "C:\\DEV\\1-15.TDD_TV_10\\test\\TVControllerTest.cpp",
-          "line": 61
+          "line": 65
         },
         {
           "name": "BoundaryChannel99",
           "file": "C:\\DEV\\1-15.TDD_TV_10\\test\\TVControllerTest.cpp",
-          "line": 72
+          "line": 76
         },
         {
           "name": "BoundaryChannel00",
           "file": "C:\\DEV\\1-15.TDD_TV_10\\test\\TVControllerTest.cpp",
-          "line": 79
+          "line": 83
         },
         {
           "name": "BoundaryChannel09",
           "file": "C:\\DEV\\1-15.TDD_TV_10\\test\\TVControllerTest.cpp",
-          "line": 86
+          "line": 90
         },
         {
           "name": "SeekCHCall",
           "file": "C:\\DEV\\1-15.TDD_TV_10\\test\\TVControllerTest.cpp",
-          "line": 93
+          "line": 97
+        },
+        {
+          "name": "ToggleFavoriteChannel",
+          "file": "C:\\DEV\\1-15.TDD_TV_10\\test\\TVControllerTest.cpp",
+          "line": 104
+        },
+        {
+          "name": "MoveToNextFavorite",
+          "file": "C:\\DEV\\1-15.TDD_TV_10\\test\\TVControllerTest.cpp",
+          "line": 115
+        },
+        {
+          "name": "ChannelUpDownWithoutFavorites",
+          "file": "C:\\DEV\\1-15.TDD_TV_10\\test\\TVControllerTest.cpp",
+          "line": 131
+        },
+        {
+          "name": "ChannelUpDownWithFavorites",
+          "file": "C:\\DEV\\1-15.TDD_TV_10\\test\\TVControllerTest.cpp",
+          "line": 143
         }
       ]
     }

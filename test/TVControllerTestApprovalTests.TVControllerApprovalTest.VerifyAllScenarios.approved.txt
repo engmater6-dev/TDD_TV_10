@@ -29,7 +29,27 @@ setCH called with: 9
 
 [8] = SeekAndGetCurrentCH:
 setCH called with: 1
-seekCH returned: 
-getCurrentCH returned: 
+seekCH returned: 7
+getCurrentCH returned: 5
+
+[9] = ToggleFavorite:
+setCH called with: 5
+
+[10] = NextFavorite:
+setCH called with: 1
+setCH called with: 9
+setCH called with: 1
+
+[11] = ChannelUpDown:
+setCH called with: 0
+setCH called with: 6
+setCH called with: 4
+
+[12] = ChannelUpDownFavorite:
+setCH called with: 2
+setCH called with: 5
+setCH called with: 2
+setCH called with: 6
+setCH called with: 4
 
 
