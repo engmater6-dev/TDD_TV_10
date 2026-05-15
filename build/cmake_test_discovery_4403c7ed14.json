@@ -1,15 +1,20 @@
 {
-  "tests": 1,
+  "tests": 2,
   "name": "AllTests",
   "testsuites": [
     {
       "name": "TVControllerTest",
-      "tests": 1,
+      "tests": 2,
       "testsuite": [
         {
           "name": "OneInputAndOkSetCh",
           "file": "C:\\DEV\\1-15.TDD_TV_10\\test\\TVControllerTest.cpp",
-          "line": 13
+          "line": 14
+        },
+        {
+          "name": "TwoInputAutoSetCh",
+          "file": "C:\\DEV\\1-15.TDD_TV_10\\test\\TVControllerTest.cpp",
+          "line": 25
         }
       ]
     }
