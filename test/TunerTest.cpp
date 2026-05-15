@@ -56,7 +56,7 @@ TEST_P(TunerInvalidChannelTest, testSetChForInvalidChannel) {
 INSTANTIATE_TEST_SUITE_P(InvalidChannels, TunerInvalidChannelTest,
                          ::testing::Values("-12", "-2", "-0", "100", "9999"));
 
-// 채널검색테스트 : 시작 채널로부터 10개 채널 검색 테스트
+// 채널검색테스트 : 시작 채널로부터 10개 채널 검색 테스트 (정상 케이스)
 TEST_F(TunerTest, testSeekCh10times) {
   EXPECT_CALL(tuner, seekCH()).WillRepeatedly(::testing::Return("5"));
 
@@ -64,7 +64,7 @@ TEST_F(TunerTest, testSeekCh10times) {
   for (int i = 0; i < 10; i++) {
     std::string seekCh = tuner.seekCH();
     if (seekCh.empty())
-      break; // assumeTrue equivalent
+      break; // 분기 커버
     int ch = std::stoi(seekCh);
     EXPECT_TRUE(0 <= ch && ch <= 99);
     seekChannel.push_back(seekCh);
@@ -72,7 +72,8 @@ TEST_F(TunerTest, testSeekCh10times) {
   EXPECT_EQ(10u, seekChannel.size());
 }
 
-// 채널검색테스트 : 시작 채널값을 99로 지정하고 10개 채널 검색 테스트
+// 채널검색테스트 : 시작 채널값을 99로 지정하고 10개 채널 검색 테스트 (정상
+// 케이스)
 TEST_F(TunerTest, testSeekCh10timesAfterSetCH) {
   EXPECT_CALL(tuner, setCH("99"));
   EXPECT_CALL(tuner, seekCH()).WillRepeatedly(::testing::Return("50"));
@@ -82,10 +83,27 @@ TEST_F(TunerTest, testSeekCh10timesAfterSetCH) {
   for (int i = 0; i < 10; i++) {
     std::string seekCh = tuner.seekCH();
     if (seekCh.empty())
-      break; // assumeTrue equivalent
+      break; // 분기 커버
     int ch = std::stoi(seekCh);
     EXPECT_TRUE(0 <= ch && ch <= 99);
     seekChannel.push_back(seekCh);
   }
   EXPECT_EQ(10u, seekChannel.size());
+}
+
+// 채널검색테스트 : seekCH가 빈 문자열을 반환하는 경우 (break 분기 커버)
+TEST_F(TunerTest, testSeekChBreakWhenEmpty) {
+  EXPECT_CALL(tuner, seekCH())
+      .WillOnce(::testing::Return("")); // 첫 호출에서 빈 문자열 반환
+
+  std::vector<std::string> seekChannel;
+  for (int i = 0; i < 10; i++) {
+    std::string seekCh = tuner.seekCH();
+    if (seekCh.empty())
+      break; // 이 분기가 실제로 실행됨
+    int ch = std::stoi(seekCh);
+    EXPECT_TRUE(0 <= ch && ch <= 99);
+    seekChannel.push_back(seekCh);
+  }
+  EXPECT_EQ(0u, seekChannel.size()); // break로 인해 push_back 안 됨
 }

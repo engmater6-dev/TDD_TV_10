@@ -1,0 +1,13 @@
+OneDigitWithConfirm=1
+TwoDigitAutoChange=12
+ThreeDigitFirstTwo=45
+ThreeDigitBufferStill=45
+ThreeDigitFinalConfirm=6
+AddFavorite=5 1
+RemoveFavorite=0
+NextFavoriteFromNonFavorite=2
+SetCHValid=10
+AfterInvalidSetCH=10
+SeekCH=99,0,1
+GetCurrentCH=42
+

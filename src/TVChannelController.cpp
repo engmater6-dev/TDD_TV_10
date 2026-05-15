@@ -3,92 +3,92 @@
 #include <stdexcept>
 
 
-void TVChannelController::pressNumber(int digit) {
-  if (inputBuffer_ == -1) {
-    inputBuffer_ = digit;
-  } else {
-    int ch = inputBuffer_ * 10 + digit;
-    inputBuffer_ = -1;
+// 숫자 입력 처리
+void TVChannelController::pressNumber(int num) {
+  buffer_.push_back(num);
+
+  if (buffer_.size() == 2) {
+    int ch = buffer_[0] * 10 + buffer_[1];
     applyChannel(ch);
+    buffer_.clear();
+  } else if (buffer_.size() > 2) {
+    int ch = buffer_[buffer_.size() - 2] * 10 + buffer_[buffer_.size() - 1];
+    applyChannel(ch);
+    buffer_.clear();
   }
 }
 
 void TVChannelController::pressConfirm() {
-  if (inputBuffer_ != -1) {
-    int ch = inputBuffer_;
-    inputBuffer_ = -1;
+  if (buffer_.size() == 1) {
+    int ch = buffer_[0];
     applyChannel(ch);
   }
+  buffer_.clear();
 }
 
-void TVChannelController::pressOther() { inputBuffer_ = -1; }
-
-// 2-1. 선호 채널 추가/삭제
 void TVChannelController::pressFavorite() {
-  int ch = std::stoi(tuner_.getCurrentCH());
-  if (isFavorite(ch)) {
-    favorites_.erase(std::remove(favorites_.begin(), favorites_.end(), ch),
-                     favorites_.end());
+  int current = std::stoi(tuner_.getCurrentCH());
+  auto it =
+      std::find(favoriteChannels_.begin(), favoriteChannels_.end(), current);
+  if (it == favoriteChannels_.end()) {
+    favoriteChannels_.push_back(current);
+    std::sort(favoriteChannels_.begin(), favoriteChannels_.end());
   } else {
-    addFavorite(ch);
+    favoriteChannels_.erase(it);
   }
 }
 
-// 3-1. 선호 채널 이동
 void TVChannelController::pressNextFavorite() {
-  if (favorites_.empty())
+  if (favoriteChannels_.empty())
     return;
-  int cur = std::stoi(tuner_.getCurrentCH());
-  auto it = std::upper_bound(favorites_.begin(), favorites_.end(), cur);
-  int next = (it != favorites_.end()) ? *it : favorites_.front();
+  int current = std::stoi(tuner_.getCurrentCH());
+  auto it = std::find_if(favoriteChannels_.begin(), favoriteChannels_.end(),
+                         [&](int ch) { return ch > current; });
+  int next = (it != favoriteChannels_.end()) ? *it : favoriteChannels_.front();
   applyChannel(next);
 }
 
-// 5-1. 채널 업 (저장 채널 없음)
 void TVChannelController::pressUp() {
-  int cur = std::stoi(tuner_.getCurrentCH());
-  int next = (cur + 1 > 99) ? 0 : cur + 1;
+  int current = std::stoi(tuner_.getCurrentCH());
+  int next = (current + 1) % 100;
   applyChannel(next);
 }
 
-// 5-2. 채널 다운 (저장 채널 없음)
 void TVChannelController::pressDown() {
-  int cur = std::stoi(tuner_.getCurrentCH());
-  int next = (cur - 1 < 0) ? 99 : cur - 1;
+  int current = std::stoi(tuner_.getCurrentCH());
+  int next = (current == 0) ? 99 : current - 1;
   applyChannel(next);
 }
 
-// 6. 채널 업 (저장 채널 기준)
 void TVChannelController::pressUpFavorite() {
-  if (favorites_.empty()) {
-    pressUp();
+  if (favoriteChannels_.empty())
     return;
-  }
-  int cur = std::stoi(tuner_.getCurrentCH());
-  auto it = std::upper_bound(favorites_.begin(), favorites_.end(), cur);
-  int next = (it != favorites_.end()) ? *it : favorites_.front();
+  int current = std::stoi(tuner_.getCurrentCH());
+  auto it = std::find_if(favoriteChannels_.begin(), favoriteChannels_.end(),
+                         [&](int ch) { return ch > current; });
+  int next = (it != favoriteChannels_.end()) ? *it : favoriteChannels_.front();
   applyChannel(next);
 }
 
-// 6. 채널 다운 (저장 채널 기준)
 void TVChannelController::pressDownFavorite() {
-  if (favorites_.empty()) {
-    pressDown();
+  if (favoriteChannels_.empty())
     return;
-  }
-  int cur = std::stoi(tuner_.getCurrentCH());
-  auto it = std::lower_bound(favorites_.begin(), favorites_.end(), cur);
-  if (it == favorites_.begin()) {
-    applyChannel(favorites_.back());
-  } else {
-    --it;
-    applyChannel(*it);
-  }
+  int current = std::stoi(tuner_.getCurrentCH());
+  auto it = std::find_if(favoriteChannels_.rbegin(), favoriteChannels_.rend(),
+                         [&](int ch) { return ch < current; });
+  int next = (it != favoriteChannels_.rend()) ? *it : favoriteChannels_.back();
+  applyChannel(next);
 }
 
-// 채널 적용
+void TVChannelController::pressOther() { buffer_.clear(); }
+
 void TVChannelController::applyChannel(int ch) {
-  if (!isValidChannel(ch))
+  if (!isValidChannel(ch)) {
     throw std::invalid_argument("채널 범위 초과: " + std::to_string(ch));
+  }
   tuner_.setCH(std::to_string(ch));
+}
+
+bool TVChannelController::isValidChannel(int ch) const {
+  return ch >= 0 && ch <= 99;
 }

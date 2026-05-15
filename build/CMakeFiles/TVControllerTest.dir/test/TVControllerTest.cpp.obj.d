@@ -103,14 +103,6 @@ CMakeFiles/TVControllerTest.dir/test/TVControllerTest.cpp.obj: \
  C:/mingw64/include/c++/15.2.0/bits/uses_allocator_args.h \
  C:/mingw64/include/c++/15.2.0/tuple \
  C:/DEV/1-15.TDD_TV_10/include/TVChannelController.h \
- C:/mingw64/include/c++/15.2.0/algorithm \
- C:/mingw64/include/c++/15.2.0/bits/stl_algo.h \
- C:/mingw64/include/c++/15.2.0/bits/algorithmfwd.h \
- C:/mingw64/include/c++/15.2.0/bits/stl_heap.h \
- C:/mingw64/include/c++/15.2.0/bits/uniform_int_dist.h \
- C:/mingw64/include/c++/15.2.0/bits/stl_tempbuf.h \
- C:/mingw64/include/c++/15.2.0/pstl/glue_algorithm_defs.h \
- C:/mingw64/include/c++/15.2.0/pstl/execution_defs.h \
  C:/mingw64/include/c++/15.2.0/vector \
  C:/mingw64/include/c++/15.2.0/bits/stl_uninitialized.h \
  C:/mingw64/include/c++/15.2.0/bits/stl_vector.h \
@@ -123,6 +115,7 @@ CMakeFiles/TVControllerTest.dir/test/TVControllerTest.cpp.obj: \
  C:/mingw64/x86_64-w64-mingw32/include/stdint.h \
  C:/mingw64/include/c++/15.2.0/limits \
  C:/mingw64/include/c++/15.2.0/memory \
+ C:/mingw64/include/c++/15.2.0/bits/stl_tempbuf.h \
  C:/mingw64/include/c++/15.2.0/bits/stl_raw_storage_iter.h \
  C:/mingw64/include/c++/15.2.0/bits/align.h \
  C:/mingw64/include/c++/15.2.0/bits/unique_ptr.h \
@@ -159,6 +152,7 @@ CMakeFiles/TVControllerTest.dir/test/TVControllerTest.cpp.obj: \
  C:/mingw64/include/c++/15.2.0/bits/atomic_lockfree_defines.h \
  C:/mingw64/include/c++/15.2.0/backward/auto_ptr.h \
  C:/mingw64/include/c++/15.2.0/pstl/glue_memory_defs.h \
+ C:/mingw64/include/c++/15.2.0/pstl/execution_defs.h \
  C:/mingw64/include/c++/15.2.0/ostream \
  C:/mingw64/include/c++/15.2.0/bits/ostream.h \
  C:/mingw64/include/c++/15.2.0/ios \

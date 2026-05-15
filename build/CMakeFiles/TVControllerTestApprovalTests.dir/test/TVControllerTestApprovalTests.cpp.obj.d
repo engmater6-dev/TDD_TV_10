@@ -103,14 +103,6 @@ CMakeFiles/TVControllerTestApprovalTests.dir/test/TVControllerTestApprovalTests.
  C:/mingw64/include/c++/15.2.0/tuple \
  C:/DEV/1-15.TDD_TV_10/include/TVController.h \
  C:/DEV/1-15.TDD_TV_10/include/TVChannelController.h \
- C:/mingw64/include/c++/15.2.0/algorithm \
- C:/mingw64/include/c++/15.2.0/bits/stl_algo.h \
- C:/mingw64/include/c++/15.2.0/bits/algorithmfwd.h \
- C:/mingw64/include/c++/15.2.0/bits/stl_heap.h \
- C:/mingw64/include/c++/15.2.0/bits/uniform_int_dist.h \
- C:/mingw64/include/c++/15.2.0/bits/stl_tempbuf.h \
- C:/mingw64/include/c++/15.2.0/pstl/glue_algorithm_defs.h \
- C:/mingw64/include/c++/15.2.0/pstl/execution_defs.h \
  C:/mingw64/include/c++/15.2.0/vector \
  C:/mingw64/include/c++/15.2.0/bits/stl_uninitialized.h \
  C:/mingw64/include/c++/15.2.0/bits/stl_vector.h \
@@ -138,6 +130,7 @@ CMakeFiles/TVControllerTestApprovalTests.dir/test/TVControllerTestApprovalTests.
  C:/mingw64/include/c++/15.2.0/bits/stl_map.h \
  C:/mingw64/include/c++/15.2.0/bits/stl_multimap.h \
  C:/mingw64/include/c++/15.2.0/memory \
+ C:/mingw64/include/c++/15.2.0/bits/stl_tempbuf.h \
  C:/mingw64/include/c++/15.2.0/bits/stl_raw_storage_iter.h \
  C:/mingw64/include/c++/15.2.0/bits/align.h \
  C:/mingw64/include/c++/15.2.0/bits/unique_ptr.h \
@@ -172,6 +165,7 @@ CMakeFiles/TVControllerTestApprovalTests.dir/test/TVControllerTestApprovalTests.
  C:/mingw64/include/c++/15.2.0/bits/atomic_lockfree_defines.h \
  C:/mingw64/include/c++/15.2.0/backward/auto_ptr.h \
  C:/mingw64/include/c++/15.2.0/pstl/glue_memory_defs.h \
+ C:/mingw64/include/c++/15.2.0/pstl/execution_defs.h \
  C:/DEV/1-15.TDD_TV_10/build/_deps/approvaltests-src/ApprovalTests/reporters/DiffInfo.h \
  C:/mingw64/include/c++/15.2.0/utility \
  C:/mingw64/include/c++/15.2.0/bits/stl_relops.h \
@@ -211,6 +205,12 @@ CMakeFiles/TVControllerTestApprovalTests.dir/test/TVControllerTestApprovalTests.
  C:/mingw64/include/c++/15.2.0/bits/istream.tcc \
  C:/mingw64/include/c++/15.2.0/bits/sstream.tcc \
  C:/DEV/1-15.TDD_TV_10/build/_deps/approvaltests-src/ApprovalTests/utilities/StringUtils.h \
+ C:/mingw64/include/c++/15.2.0/algorithm \
+ C:/mingw64/include/c++/15.2.0/bits/stl_algo.h \
+ C:/mingw64/include/c++/15.2.0/bits/algorithmfwd.h \
+ C:/mingw64/include/c++/15.2.0/bits/stl_heap.h \
+ C:/mingw64/include/c++/15.2.0/bits/uniform_int_dist.h \
+ C:/mingw64/include/c++/15.2.0/pstl/glue_algorithm_defs.h \
  C:/DEV/1-15.TDD_TV_10/build/_deps/approvaltests-src/ApprovalTests/utilities/SystemUtils.h \
  C:/mingw64/x86_64-w64-mingw32/include/io.h \
  C:/mingw64/x86_64-w64-mingw32/include/string.h \
@@ -369,4 +369,12 @@ CMakeFiles/TVControllerTestApprovalTests.dir/test/TVControllerTestApprovalTests.
  C:/DEV/1-15.TDD_TV_10/build/_deps/approvaltests-src/ApprovalTests/utilities/EmptyFileCreatorByType.h \
  C:/DEV/1-15.TDD_TV_10/build/_deps/approvaltests-src/ApprovalTests/utilities/ExceptionCollector.h \
  C:/DEV/1-15.TDD_TV_10/build/_deps/approvaltests-src/ApprovalTests/utilities/FileUtilsSystemSpecific.h \
- C:/DEV/1-15.TDD_TV_10/build/_deps/approvaltests-src/ApprovalTests/utilities/Grid.h
+ C:/DEV/1-15.TDD_TV_10/build/_deps/approvaltests-src/ApprovalTests/utilities/Grid.h \
+ C:/mingw64/include/c++/15.2.0/filesystem \
+ C:/mingw64/include/c++/15.2.0/bits/fs_fwd.h \
+ C:/mingw64/include/c++/15.2.0/bits/fs_path.h \
+ C:/mingw64/include/c++/15.2.0/iomanip \
+ C:/mingw64/include/c++/15.2.0/bits/quoted_string.h \
+ C:/mingw64/include/c++/15.2.0/codecvt \
+ C:/mingw64/include/c++/15.2.0/bits/fs_dir.h \
+ C:/mingw64/include/c++/15.2.0/bits/fs_ops.h
