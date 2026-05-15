@@ -16,23 +16,19 @@ FetchContent_MakeAvailable(googletest)
 
 # --- CMake - ApprovalTests 설치 ---
 # FetchContent로 헤더 전용 라이브러리 추가
-FetchContent_Declare(
-    ApprovalTests
-    GIT_REPOSITORY https://github.com/approvals/ApprovalTests.cpp.git
-    GIT_TAG v.10.13.0
-)
-FetchContent_MakeAvailable(ApprovalTests)
+FetchContent_Declare(googletest
+    GIT_REPOSITORY https://github.com/google/googletest.git
+    GIT_TAG        v1.14.0)
+FetchContent_MakeAvailable(googletest)
 
 include_directories(include)
 
 enable_testing()
 
-add_executable(TunerTest test/TunerTest.cpp)
-target_link_libraries(TunerTest GTest::gtest_main GTest::gmock)
-
-add_executable(TVControllerTest test/TVControllerTest.cpp)
-target_link_libraries(TVControllerTest GTest::gtest_main GTest::gmock)
-
-include(GoogleTest)
-gtest_discover_tests(TunerTest)
-gtest_discover_tests(TVControllerTest)
+add_executable(tv_test
+    test/TVChannelControllerTest.cpp
+    src/TVChannelController.cpp)
+target_include_directories(tv_test PRIVATE include)
+target_link_libraries(tv_test
+    GTest::gtest_main GMock::gmock_main)
+gtest_discover_tests(tv_test)
