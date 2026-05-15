@@ -11,35 +11,36 @@
 #ifndef TV_CONTROLLER_H
 #define TV_CONTROLLER_H
 
-#include "Tuner.h"
+#include "ITuner.h"
 #include "remoteKey.h"
-#include <string>
 #include <iostream>
+#include <string>
 
 class TVController {
 private:
-    Tuner* tuner;
-    std::string processingCH;
+  ITuner *tuner;
+  std::string processingCH;
 
-    void setTunerCh() {
-        // 로그는 테스트의 결과가 절대 아닙니다. 로그가 있는 것을 테스트로 간주하지 마시기 바랍니다.
-        std::cout << "현재 설정하는 채널 : " << processingCH << std::endl;
-        // tuner->setCH(processingCH);
-    }
+  void setTunerCh() {
+    // 로그는 테스트의 결과가 절대 아닙니다. 로그가 있는 것을 테스트로 간주하지
+    // 마시기 바랍니다.
+    std::cout << "현재 설정하는 채널 : " << processingCH << std::endl;
+    // tuner->setCH(processingCH);
+  }
 
 public:
-    explicit TVController(Tuner* tuner) : tuner(tuner), processingCH("") {}
+  explicit TVController(ITuner *tuner) : tuner(tuner), processingCH("") {}
 
-    void pushButton(remoteKey key) {
-        switch (key) {
-            case remoteKey::KEY_1:
-                processingCH += to_string(key);
-                break;
-            case remoteKey::KEY_OK:
-                setTunerCh();
-                break;
-        }
+  void pushButton(remoteKey key) {
+    switch (key) {
+    case remoteKey::KEY_1:
+      processingCH += to_string(key);
+      break;
+    case remoteKey::KEY_OK:
+      setTunerCh();
+      break;
     }
+  }
 };
 
 #endif // TV_CONTROLLER_H
