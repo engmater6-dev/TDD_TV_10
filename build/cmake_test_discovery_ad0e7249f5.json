@@ -7,9 +7,9 @@
       "tests": 1,
       "testsuite": [
         {
-          "name": "CombinedVerifyAll",
+          "name": "VerifyAllScenarios",
           "file": "C:\\DEV\\1-15.TDD_TV_10\\test\\TVControllerTestApprovalTests.cpp",
-          "line": 20
+          "line": 19
         }
       ]
     }

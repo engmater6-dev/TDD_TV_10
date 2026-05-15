@@ -1,20 +1,50 @@
 {
-  "tests": 2,
+  "tests": 8,
   "name": "AllTests",
   "testsuites": [
     {
-      "name": "TVControllerTest",
-      "tests": 2,
+      "name": "ControllerTest",
+      "tests": 8,
       "testsuite": [
         {
-          "name": "OneInputAndOkSetCh",
+          "name": "OneDigitWithConfirm",
           "file": "C:\\DEV\\1-15.TDD_TV_10\\test\\TVControllerTest.cpp",
-          "line": 14
+          "line": 31
         },
         {
-          "name": "TwoInputAutoSetCh",
+          "name": "TwoDigitAutoChange",
           "file": "C:\\DEV\\1-15.TDD_TV_10\\test\\TVControllerTest.cpp",
-          "line": 25
+          "line": 38
+        },
+        {
+          "name": "ThreeDigitInput",
+          "file": "C:\\DEV\\1-15.TDD_TV_10\\test\\TVControllerTest.cpp",
+          "line": 45
+        },
+        {
+          "name": "LeadingZeroTwoDigit",
+          "file": "C:\\DEV\\1-15.TDD_TV_10\\test\\TVControllerTest.cpp",
+          "line": 55
+        },
+        {
+          "name": "FourDigitInput",
+          "file": "C:\\DEV\\1-15.TDD_TV_10\\test\\TVControllerTest.cpp",
+          "line": 62
+        },
+        {
+          "name": "BoundaryChannel99",
+          "file": "C:\\DEV\\1-15.TDD_TV_10\\test\\TVControllerTest.cpp",
+          "line": 73
+        },
+        {
+          "name": "BoundaryChannel00",
+          "file": "C:\\DEV\\1-15.TDD_TV_10\\test\\TVControllerTest.cpp",
+          "line": 80
+        },
+        {
+          "name": "BoundaryChannel09",
+          "file": "C:\\DEV\\1-15.TDD_TV_10\\test\\TVControllerTest.cpp",
+          "line": 87
         }
       ]
     }
