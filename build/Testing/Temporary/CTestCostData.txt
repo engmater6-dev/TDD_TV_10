@@ -1,0 +1,14 @@
+TunerTest.testSeekCh10timesAfterSetCH 1 0.0255821
+TunerTest.testSeekCh10times 1 0.024223
+InvalidChannels/TunerInvalidChannelTest.testSetChForInvalidChannel/"-0" 1 0.0240229
+InvalidChannels/TunerInvalidChannelTest.testSetChForInvalidChannel/"-12" 1 0.0227908
+InvalidChannels/TunerInvalidChannelTest.testSetChForInvalidChannel/"-2" 1 0.0222541
+InvalidChannels/TunerInvalidChannelTest.testSetChForInvalidChannel/"100" 1 0.0251426
+InvalidChannels/TunerInvalidChannelTest.testSetChForInvalidChannel/"9999" 1 0.0233773
+ValidChannels/TunerValidChannelTest.testSetChForValidChannel/"0" 1 0.0303319
+ValidChannels/TunerValidChannelTest.testSetChForValidChannel/"12" 1 0.0234182
+ValidChannels/TunerValidChannelTest.testSetChForValidChannel/"4" 1 0.0282929
+ValidChannels/TunerValidChannelTest.testSetChForValidChannel/"5" 1 0.0239694
+ValidChannels/TunerValidChannelTest.testSetChForValidChannel/"99" 1 0.0233374
+TunerTest.initChannel 1 0.0221463
+---

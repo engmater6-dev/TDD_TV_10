@@ -25,10 +25,12 @@ include_directories(include)
 
 enable_testing()
 
-add_executable(tv_test
-    test/TVChannelControllerTest.cpp
-    src/TVChannelController.cpp)
-target_include_directories(tv_test PRIVATE include)
-target_link_libraries(tv_test
-    GTest::gtest_main GMock::gmock_main)
-gtest_discover_tests(tv_test)
+add_executable(TunerTest test/TunerTest.cpp)
+target_link_libraries(TunerTest GTest::gtest_main GTest::gmock)
+
+add_executable(TVControllerTest test/TVControllerTest.cpp)
+target_link_libraries(TVControllerTest GTest::gtest_main GTest::gmock)
+
+include(GoogleTest)
+gtest_discover_tests(TunerTest)
+gtest_discover_tests(TVControllerTest)
