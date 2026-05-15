@@ -1,0 +1,4 @@
+{
+    "coverage-gutters.lcovname": "build/lcov.info",
+    "cmake.sourceDirectory": "${workspaceFolder}"
+}
