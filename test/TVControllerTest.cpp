@@ -88,3 +88,13 @@ TEST_F(ControllerTest, BoundaryChannel09) {
   ctrl->pushButton(remoteKey::KEY_9); // "09" → 채널 9
   EXPECT_EQ("9", tuner->getCurrentCH());
 }
+
+// S1-9: seekCH 호출 테스트
+TEST_F(ControllerTest, SeekCHCall) {
+  // 채널을 먼저 설정
+  ctrl->pushButton(remoteKey::KEY_1);
+  ctrl->pushButton(remoteKey::KEY_OK);
+
+  // seekCH 호출 (현재는 "" 반환)
+  EXPECT_EQ("", tuner->seekCH());
+}

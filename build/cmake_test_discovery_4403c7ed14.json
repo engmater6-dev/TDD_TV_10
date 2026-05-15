@@ -1,10 +1,10 @@
 {
-  "tests": 8,
+  "tests": 9,
   "name": "AllTests",
   "testsuites": [
     {
       "name": "ControllerTest",
-      "tests": 8,
+      "tests": 9,
       "testsuite": [
         {
           "name": "OneDigitWithConfirm",
@@ -45,6 +45,11 @@
           "name": "BoundaryChannel09",
           "file": "C:\\DEV\\1-15.TDD_TV_10\\test\\TVControllerTest.cpp",
           "line": 86
+        },
+        {
+          "name": "SeekCHCall",
+          "file": "C:\\DEV\\1-15.TDD_TV_10\\test\\TVControllerTest.cpp",
+          "line": 93
         }
       ]
     }

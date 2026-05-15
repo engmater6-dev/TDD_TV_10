@@ -27,4 +27,9 @@ setCH called with: 0
 [7] = Boundary09:
 setCH called with: 9
 
+[8] = SeekAndGetCurrentCH:
+setCH called with: 1
+seekCH returned: 
+getCurrentCH returned: 
+
 

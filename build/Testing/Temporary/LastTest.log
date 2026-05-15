@@ -1,10 +1,10 @@
-Start testing: May 15 19:19 대한민국 표준시
+Start testing: May 15 19:33 대한민국 표준시
 ----------------------------------------------------------
-1/22 Testing: TunerTest.initChannel
-1/22 Test: TunerTest.initChannel
+1/23 Testing: TunerTest.initChannel
+1/23 Test: TunerTest.initChannel
 Command: "C:/DEV/1-15.TDD_TV_10/build/TunerTest.exe" "--gtest_filter=TunerTest.initChannel" "--gtest_also_run_disabled_tests"
 Directory: C:/DEV/1-15.TDD_TV_10/build
-"TunerTest.initChannel" start time: May 15 19:19 대한민국 표준시
+"TunerTest.initChannel" start time: May 15 19:33 대한민국 표준시
 Output:
 ----------------------------------------------------------
 Running main() from C:\DEV\1-15.TDD_TV_10\build\_deps\googletest-src\googletest\src\gtest_main.cc
@@ -13,7 +13,7 @@ Note: Google Test filter = TunerTest.initChannel
 [----------] Global test environment set-up.
 [----------] 1 test from TunerTest
 [ RUN      ] TunerTest.initChannel
-[       OK ] TunerTest.initChannel (9 ms)
+[       OK ] TunerTest.initChannel (8 ms)
 [----------] 1 test from TunerTest (9 ms total)
 
 [----------] Global test environment tear-down
@@ -23,15 +23,15 @@ Note: Google Test filter = TunerTest.initChannel
 Test time =   0.04 sec
 ----------------------------------------------------------
 Test Passed.
-"TunerTest.initChannel" end time: May 15 19:19 대한민국 표준시
+"TunerTest.initChannel" end time: May 15 19:33 대한민국 표준시
 "TunerTest.initChannel" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-2/22 Testing: TunerTest.testSeekCh10times
-2/22 Test: TunerTest.testSeekCh10times
+2/23 Testing: TunerTest.testSeekCh10times
+2/23 Test: TunerTest.testSeekCh10times
 Command: "C:/DEV/1-15.TDD_TV_10/build/TunerTest.exe" "--gtest_filter=TunerTest.testSeekCh10times" "--gtest_also_run_disabled_tests"
 Directory: C:/DEV/1-15.TDD_TV_10/build
-"TunerTest.testSeekCh10times" start time: May 15 19:19 대한민국 표준시
+"TunerTest.testSeekCh10times" start time: May 15 19:33 대한민국 표준시
 Output:
 ----------------------------------------------------------
 Running main() from C:\DEV\1-15.TDD_TV_10\build\_deps\googletest-src\googletest\src\gtest_main.cc
@@ -41,7 +41,7 @@ Note: Google Test filter = TunerTest.testSeekCh10times
 [----------] 1 test from TunerTest
 [ RUN      ] TunerTest.testSeekCh10times
 [       OK ] TunerTest.testSeekCh10times (8 ms)
-[----------] 1 test from TunerTest (9 ms total)
+[----------] 1 test from TunerTest (8 ms total)
 
 [----------] Global test environment tear-down
 [==========] 1 test from 1 test suite ran. (10 ms total)
@@ -50,15 +50,15 @@ Note: Google Test filter = TunerTest.testSeekCh10times
 Test time =   0.04 sec
 ----------------------------------------------------------
 Test Passed.
-"TunerTest.testSeekCh10times" end time: May 15 19:19 대한민국 표준시
+"TunerTest.testSeekCh10times" end time: May 15 19:33 대한민국 표준시
 "TunerTest.testSeekCh10times" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-3/22 Testing: TunerTest.testSeekCh10timesAfterSetCH
-3/22 Test: TunerTest.testSeekCh10timesAfterSetCH
+3/23 Testing: TunerTest.testSeekCh10timesAfterSetCH
+3/23 Test: TunerTest.testSeekCh10timesAfterSetCH
 Command: "C:/DEV/1-15.TDD_TV_10/build/TunerTest.exe" "--gtest_filter=TunerTest.testSeekCh10timesAfterSetCH" "--gtest_also_run_disabled_tests"
 Directory: C:/DEV/1-15.TDD_TV_10/build
-"TunerTest.testSeekCh10timesAfterSetCH" start time: May 15 19:19 대한민국 표준시
+"TunerTest.testSeekCh10timesAfterSetCH" start time: May 15 19:33 대한민국 표준시
 Output:
 ----------------------------------------------------------
 Running main() from C:\DEV\1-15.TDD_TV_10\build\_deps\googletest-src\googletest\src\gtest_main.cc
@@ -77,15 +77,15 @@ Note: Google Test filter = TunerTest.testSeekCh10timesAfterSetCH
 Test time =   0.03 sec
 ----------------------------------------------------------
 Test Passed.
-"TunerTest.testSeekCh10timesAfterSetCH" end time: May 15 19:19 대한민국 표준시
+"TunerTest.testSeekCh10timesAfterSetCH" end time: May 15 19:33 대한민국 표준시
 "TunerTest.testSeekCh10timesAfterSetCH" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-4/22 Testing: ValidChannels/TunerValidChannelTest.testSetChForValidChannel/"0"
-4/22 Test: ValidChannels/TunerValidChannelTest.testSetChForValidChannel/"0"
+4/23 Testing: ValidChannels/TunerValidChannelTest.testSetChForValidChannel/"0"
+4/23 Test: ValidChannels/TunerValidChannelTest.testSetChForValidChannel/"0"
 Command: "C:/DEV/1-15.TDD_TV_10/build/TunerTest.exe" "--gtest_filter=ValidChannels/TunerValidChannelTest.testSetChForValidChannel/0" "--gtest_also_run_disabled_tests"
 Directory: C:/DEV/1-15.TDD_TV_10/build
-"ValidChannels/TunerValidChannelTest.testSetChForValidChannel/"0"" start time: May 15 19:19 대한민국 표준시
+"ValidChannels/TunerValidChannelTest.testSetChForValidChannel/"0"" start time: May 15 19:33 대한민국 표준시
 Output:
 ----------------------------------------------------------
 Running main() from C:\DEV\1-15.TDD_TV_10\build\_deps\googletest-src\googletest\src\gtest_main.cc
@@ -95,24 +95,24 @@ Note: Google Test filter = ValidChannels/TunerValidChannelTest.testSetChForValid
 [----------] 1 test from ValidChannels/TunerValidChannelTest
 [ RUN      ] ValidChannels/TunerValidChannelTest.testSetChForValidChannel/0
 [       OK ] ValidChannels/TunerValidChannelTest.testSetChForValidChannel/0 (3 ms)
-[----------] 1 test from ValidChannels/TunerValidChannelTest (4 ms total)
+[----------] 1 test from ValidChannels/TunerValidChannelTest (3 ms total)
 
 [----------] Global test environment tear-down
-[==========] 1 test from 1 test suite ran. (4 ms total)
+[==========] 1 test from 1 test suite ran. (3 ms total)
 [  PASSED  ] 1 test.
 <end of output>
 Test time =   0.03 sec
 ----------------------------------------------------------
 Test Passed.
-"ValidChannels/TunerValidChannelTest.testSetChForValidChannel/"0"" end time: May 15 19:19 대한민국 표준시
+"ValidChannels/TunerValidChannelTest.testSetChForValidChannel/"0"" end time: May 15 19:33 대한민국 표준시
 "ValidChannels/TunerValidChannelTest.testSetChForValidChannel/"0"" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-5/22 Testing: ValidChannels/TunerValidChannelTest.testSetChForValidChannel/"4"
-5/22 Test: ValidChannels/TunerValidChannelTest.testSetChForValidChannel/"4"
+5/23 Testing: ValidChannels/TunerValidChannelTest.testSetChForValidChannel/"4"
+5/23 Test: ValidChannels/TunerValidChannelTest.testSetChForValidChannel/"4"
 Command: "C:/DEV/1-15.TDD_TV_10/build/TunerTest.exe" "--gtest_filter=ValidChannels/TunerValidChannelTest.testSetChForValidChannel/1" "--gtest_also_run_disabled_tests"
 Directory: C:/DEV/1-15.TDD_TV_10/build
-"ValidChannels/TunerValidChannelTest.testSetChForValidChannel/"4"" start time: May 15 19:19 대한민국 표준시
+"ValidChannels/TunerValidChannelTest.testSetChForValidChannel/"4"" start time: May 15 19:33 대한민국 표준시
 Output:
 ----------------------------------------------------------
 Running main() from C:\DEV\1-15.TDD_TV_10\build\_deps\googletest-src\googletest\src\gtest_main.cc
@@ -125,21 +125,21 @@ Note: Google Test filter = ValidChannels/TunerValidChannelTest.testSetChForValid
 [----------] 1 test from ValidChannels/TunerValidChannelTest (1 ms total)
 
 [----------] Global test environment tear-down
-[==========] 1 test from 1 test suite ran. (1 ms total)
+[==========] 1 test from 1 test suite ran. (2 ms total)
 [  PASSED  ] 1 test.
 <end of output>
 Test time =   0.03 sec
 ----------------------------------------------------------
 Test Passed.
-"ValidChannels/TunerValidChannelTest.testSetChForValidChannel/"4"" end time: May 15 19:19 대한민국 표준시
+"ValidChannels/TunerValidChannelTest.testSetChForValidChannel/"4"" end time: May 15 19:33 대한민국 표준시
 "ValidChannels/TunerValidChannelTest.testSetChForValidChannel/"4"" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-6/22 Testing: ValidChannels/TunerValidChannelTest.testSetChForValidChannel/"5"
-6/22 Test: ValidChannels/TunerValidChannelTest.testSetChForValidChannel/"5"
+6/23 Testing: ValidChannels/TunerValidChannelTest.testSetChForValidChannel/"5"
+6/23 Test: ValidChannels/TunerValidChannelTest.testSetChForValidChannel/"5"
 Command: "C:/DEV/1-15.TDD_TV_10/build/TunerTest.exe" "--gtest_filter=ValidChannels/TunerValidChannelTest.testSetChForValidChannel/2" "--gtest_also_run_disabled_tests"
 Directory: C:/DEV/1-15.TDD_TV_10/build
-"ValidChannels/TunerValidChannelTest.testSetChForValidChannel/"5"" start time: May 15 19:19 대한민국 표준시
+"ValidChannels/TunerValidChannelTest.testSetChForValidChannel/"5"" start time: May 15 19:33 대한민국 표준시
 Output:
 ----------------------------------------------------------
 Running main() from C:\DEV\1-15.TDD_TV_10\build\_deps\googletest-src\googletest\src\gtest_main.cc
@@ -152,21 +152,21 @@ Note: Google Test filter = ValidChannels/TunerValidChannelTest.testSetChForValid
 [----------] 1 test from ValidChannels/TunerValidChannelTest (1 ms total)
 
 [----------] Global test environment tear-down
-[==========] 1 test from 1 test suite ran. (1 ms total)
+[==========] 1 test from 1 test suite ran. (2 ms total)
 [  PASSED  ] 1 test.
 <end of output>
 Test time =   0.03 sec
 ----------------------------------------------------------
 Test Passed.
-"ValidChannels/TunerValidChannelTest.testSetChForValidChannel/"5"" end time: May 15 19:19 대한민국 표준시
+"ValidChannels/TunerValidChannelTest.testSetChForValidChannel/"5"" end time: May 15 19:33 대한민국 표준시
 "ValidChannels/TunerValidChannelTest.testSetChForValidChannel/"5"" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-7/22 Testing: ValidChannels/TunerValidChannelTest.testSetChForValidChannel/"12"
-7/22 Test: ValidChannels/TunerValidChannelTest.testSetChForValidChannel/"12"
+7/23 Testing: ValidChannels/TunerValidChannelTest.testSetChForValidChannel/"12"
+7/23 Test: ValidChannels/TunerValidChannelTest.testSetChForValidChannel/"12"
 Command: "C:/DEV/1-15.TDD_TV_10/build/TunerTest.exe" "--gtest_filter=ValidChannels/TunerValidChannelTest.testSetChForValidChannel/3" "--gtest_also_run_disabled_tests"
 Directory: C:/DEV/1-15.TDD_TV_10/build
-"ValidChannels/TunerValidChannelTest.testSetChForValidChannel/"12"" start time: May 15 19:19 대한민국 표준시
+"ValidChannels/TunerValidChannelTest.testSetChForValidChannel/"12"" start time: May 15 19:33 대한민국 표준시
 Output:
 ----------------------------------------------------------
 Running main() from C:\DEV\1-15.TDD_TV_10\build\_deps\googletest-src\googletest\src\gtest_main.cc
@@ -176,7 +176,7 @@ Note: Google Test filter = ValidChannels/TunerValidChannelTest.testSetChForValid
 [----------] 1 test from ValidChannels/TunerValidChannelTest
 [ RUN      ] ValidChannels/TunerValidChannelTest.testSetChForValidChannel/3
 [       OK ] ValidChannels/TunerValidChannelTest.testSetChForValidChannel/3 (0 ms)
-[----------] 1 test from ValidChannels/TunerValidChannelTest (1 ms total)
+[----------] 1 test from ValidChannels/TunerValidChannelTest (0 ms total)
 
 [----------] Global test environment tear-down
 [==========] 1 test from 1 test suite ran. (1 ms total)
@@ -185,15 +185,15 @@ Note: Google Test filter = ValidChannels/TunerValidChannelTest.testSetChForValid
 Test time =   0.03 sec
 ----------------------------------------------------------
 Test Passed.
-"ValidChannels/TunerValidChannelTest.testSetChForValidChannel/"12"" end time: May 15 19:19 대한민국 표준시
+"ValidChannels/TunerValidChannelTest.testSetChForValidChannel/"12"" end time: May 15 19:33 대한민국 표준시
 "ValidChannels/TunerValidChannelTest.testSetChForValidChannel/"12"" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-8/22 Testing: ValidChannels/TunerValidChannelTest.testSetChForValidChannel/"99"
-8/22 Test: ValidChannels/TunerValidChannelTest.testSetChForValidChannel/"99"
+8/23 Testing: ValidChannels/TunerValidChannelTest.testSetChForValidChannel/"99"
+8/23 Test: ValidChannels/TunerValidChannelTest.testSetChForValidChannel/"99"
 Command: "C:/DEV/1-15.TDD_TV_10/build/TunerTest.exe" "--gtest_filter=ValidChannels/TunerValidChannelTest.testSetChForValidChannel/4" "--gtest_also_run_disabled_tests"
 Directory: C:/DEV/1-15.TDD_TV_10/build
-"ValidChannels/TunerValidChannelTest.testSetChForValidChannel/"99"" start time: May 15 19:19 대한민국 표준시
+"ValidChannels/TunerValidChannelTest.testSetChForValidChannel/"99"" start time: May 15 19:33 대한민국 표준시
 Output:
 ----------------------------------------------------------
 Running main() from C:\DEV\1-15.TDD_TV_10\build\_deps\googletest-src\googletest\src\gtest_main.cc
@@ -212,15 +212,15 @@ Note: Google Test filter = ValidChannels/TunerValidChannelTest.testSetChForValid
 Test time =   0.03 sec
 ----------------------------------------------------------
 Test Passed.
-"ValidChannels/TunerValidChannelTest.testSetChForValidChannel/"99"" end time: May 15 19:19 대한민국 표준시
+"ValidChannels/TunerValidChannelTest.testSetChForValidChannel/"99"" end time: May 15 19:33 대한민국 표준시
 "ValidChannels/TunerValidChannelTest.testSetChForValidChannel/"99"" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-9/22 Testing: InvalidChannels/TunerInvalidChannelTest.testSetChForInvalidChannel/"-12"
-9/22 Test: InvalidChannels/TunerInvalidChannelTest.testSetChForInvalidChannel/"-12"
+9/23 Testing: InvalidChannels/TunerInvalidChannelTest.testSetChForInvalidChannel/"-12"
+9/23 Test: InvalidChannels/TunerInvalidChannelTest.testSetChForInvalidChannel/"-12"
 Command: "C:/DEV/1-15.TDD_TV_10/build/TunerTest.exe" "--gtest_filter=InvalidChannels/TunerInvalidChannelTest.testSetChForInvalidChannel/0" "--gtest_also_run_disabled_tests"
 Directory: C:/DEV/1-15.TDD_TV_10/build
-"InvalidChannels/TunerInvalidChannelTest.testSetChForInvalidChannel/"-12"" start time: May 15 19:19 대한민국 표준시
+"InvalidChannels/TunerInvalidChannelTest.testSetChForInvalidChannel/"-12"" start time: May 15 19:33 대한민국 표준시
 Output:
 ----------------------------------------------------------
 Running main() from C:\DEV\1-15.TDD_TV_10\build\_deps\googletest-src\googletest\src\gtest_main.cc
@@ -230,33 +230,6 @@ Note: Google Test filter = InvalidChannels/TunerInvalidChannelTest.testSetChForI
 [----------] 1 test from InvalidChannels/TunerInvalidChannelTest
 [ RUN      ] InvalidChannels/TunerInvalidChannelTest.testSetChForInvalidChannel/0
 [       OK ] InvalidChannels/TunerInvalidChannelTest.testSetChForInvalidChannel/0 (1 ms)
-[----------] 1 test from InvalidChannels/TunerInvalidChannelTest (1 ms total)
-
-[----------] Global test environment tear-down
-[==========] 1 test from 1 test suite ran. (2 ms total)
-[  PASSED  ] 1 test.
-<end of output>
-Test time =   0.03 sec
-----------------------------------------------------------
-Test Passed.
-"InvalidChannels/TunerInvalidChannelTest.testSetChForInvalidChannel/"-12"" end time: May 15 19:19 대한민국 표준시
-"InvalidChannels/TunerInvalidChannelTest.testSetChForInvalidChannel/"-12"" time elapsed: 00:00:00
-----------------------------------------------------------
-
-10/22 Testing: InvalidChannels/TunerInvalidChannelTest.testSetChForInvalidChannel/"-2"
-10/22 Test: InvalidChannels/TunerInvalidChannelTest.testSetChForInvalidChannel/"-2"
-Command: "C:/DEV/1-15.TDD_TV_10/build/TunerTest.exe" "--gtest_filter=InvalidChannels/TunerInvalidChannelTest.testSetChForInvalidChannel/1" "--gtest_also_run_disabled_tests"
-Directory: C:/DEV/1-15.TDD_TV_10/build
-"InvalidChannels/TunerInvalidChannelTest.testSetChForInvalidChannel/"-2"" start time: May 15 19:19 대한민국 표준시
-Output:
-----------------------------------------------------------
-Running main() from C:\DEV\1-15.TDD_TV_10\build\_deps\googletest-src\googletest\src\gtest_main.cc
-Note: Google Test filter = InvalidChannels/TunerInvalidChannelTest.testSetChForInvalidChannel/1
-[==========] Running 1 test from 1 test suite.
-[----------] Global test environment set-up.
-[----------] 1 test from InvalidChannels/TunerInvalidChannelTest
-[ RUN      ] InvalidChannels/TunerInvalidChannelTest.testSetChForInvalidChannel/1
-[       OK ] InvalidChannels/TunerInvalidChannelTest.testSetChForInvalidChannel/1 (1 ms)
 [----------] 1 test from InvalidChannels/TunerInvalidChannelTest (2 ms total)
 
 [----------] Global test environment tear-down
@@ -266,15 +239,42 @@ Note: Google Test filter = InvalidChannels/TunerInvalidChannelTest.testSetChForI
 Test time =   0.03 sec
 ----------------------------------------------------------
 Test Passed.
-"InvalidChannels/TunerInvalidChannelTest.testSetChForInvalidChannel/"-2"" end time: May 15 19:19 대한민국 표준시
+"InvalidChannels/TunerInvalidChannelTest.testSetChForInvalidChannel/"-12"" end time: May 15 19:33 대한민국 표준시
+"InvalidChannels/TunerInvalidChannelTest.testSetChForInvalidChannel/"-12"" time elapsed: 00:00:00
+----------------------------------------------------------
+
+10/23 Testing: InvalidChannels/TunerInvalidChannelTest.testSetChForInvalidChannel/"-2"
+10/23 Test: InvalidChannels/TunerInvalidChannelTest.testSetChForInvalidChannel/"-2"
+Command: "C:/DEV/1-15.TDD_TV_10/build/TunerTest.exe" "--gtest_filter=InvalidChannels/TunerInvalidChannelTest.testSetChForInvalidChannel/1" "--gtest_also_run_disabled_tests"
+Directory: C:/DEV/1-15.TDD_TV_10/build
+"InvalidChannels/TunerInvalidChannelTest.testSetChForInvalidChannel/"-2"" start time: May 15 19:33 대한민국 표준시
+Output:
+----------------------------------------------------------
+Running main() from C:\DEV\1-15.TDD_TV_10\build\_deps\googletest-src\googletest\src\gtest_main.cc
+Note: Google Test filter = InvalidChannels/TunerInvalidChannelTest.testSetChForInvalidChannel/1
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from InvalidChannels/TunerInvalidChannelTest
+[ RUN      ] InvalidChannels/TunerInvalidChannelTest.testSetChForInvalidChannel/1
+[       OK ] InvalidChannels/TunerInvalidChannelTest.testSetChForInvalidChannel/1 (1 ms)
+[----------] 1 test from InvalidChannels/TunerInvalidChannelTest (1 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (2 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Passed.
+"InvalidChannels/TunerInvalidChannelTest.testSetChForInvalidChannel/"-2"" end time: May 15 19:33 대한민국 표준시
 "InvalidChannels/TunerInvalidChannelTest.testSetChForInvalidChannel/"-2"" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-11/22 Testing: InvalidChannels/TunerInvalidChannelTest.testSetChForInvalidChannel/"-0"
-11/22 Test: InvalidChannels/TunerInvalidChannelTest.testSetChForInvalidChannel/"-0"
+11/23 Testing: InvalidChannels/TunerInvalidChannelTest.testSetChForInvalidChannel/"-0"
+11/23 Test: InvalidChannels/TunerInvalidChannelTest.testSetChForInvalidChannel/"-0"
 Command: "C:/DEV/1-15.TDD_TV_10/build/TunerTest.exe" "--gtest_filter=InvalidChannels/TunerInvalidChannelTest.testSetChForInvalidChannel/2" "--gtest_also_run_disabled_tests"
 Directory: C:/DEV/1-15.TDD_TV_10/build
-"InvalidChannels/TunerInvalidChannelTest.testSetChForInvalidChannel/"-0"" start time: May 15 19:19 대한민국 표준시
+"InvalidChannels/TunerInvalidChannelTest.testSetChForInvalidChannel/"-0"" start time: May 15 19:33 대한민국 표준시
 Output:
 ----------------------------------------------------------
 Running main() from C:\DEV\1-15.TDD_TV_10\build\_deps\googletest-src\googletest\src\gtest_main.cc
@@ -293,15 +293,15 @@ Note: Google Test filter = InvalidChannels/TunerInvalidChannelTest.testSetChForI
 Test time =   0.03 sec
 ----------------------------------------------------------
 Test Passed.
-"InvalidChannels/TunerInvalidChannelTest.testSetChForInvalidChannel/"-0"" end time: May 15 19:19 대한민국 표준시
+"InvalidChannels/TunerInvalidChannelTest.testSetChForInvalidChannel/"-0"" end time: May 15 19:33 대한민국 표준시
 "InvalidChannels/TunerInvalidChannelTest.testSetChForInvalidChannel/"-0"" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-12/22 Testing: InvalidChannels/TunerInvalidChannelTest.testSetChForInvalidChannel/"100"
-12/22 Test: InvalidChannels/TunerInvalidChannelTest.testSetChForInvalidChannel/"100"
+12/23 Testing: InvalidChannels/TunerInvalidChannelTest.testSetChForInvalidChannel/"100"
+12/23 Test: InvalidChannels/TunerInvalidChannelTest.testSetChForInvalidChannel/"100"
 Command: "C:/DEV/1-15.TDD_TV_10/build/TunerTest.exe" "--gtest_filter=InvalidChannels/TunerInvalidChannelTest.testSetChForInvalidChannel/3" "--gtest_also_run_disabled_tests"
 Directory: C:/DEV/1-15.TDD_TV_10/build
-"InvalidChannels/TunerInvalidChannelTest.testSetChForInvalidChannel/"100"" start time: May 15 19:19 대한민국 표준시
+"InvalidChannels/TunerInvalidChannelTest.testSetChForInvalidChannel/"100"" start time: May 15 19:33 대한민국 표준시
 Output:
 ----------------------------------------------------------
 Running main() from C:\DEV\1-15.TDD_TV_10\build\_deps\googletest-src\googletest\src\gtest_main.cc
@@ -320,15 +320,15 @@ Note: Google Test filter = InvalidChannels/TunerInvalidChannelTest.testSetChForI
 Test time =   0.03 sec
 ----------------------------------------------------------
 Test Passed.
-"InvalidChannels/TunerInvalidChannelTest.testSetChForInvalidChannel/"100"" end time: May 15 19:19 대한민국 표준시
+"InvalidChannels/TunerInvalidChannelTest.testSetChForInvalidChannel/"100"" end time: May 15 19:33 대한민국 표준시
 "InvalidChannels/TunerInvalidChannelTest.testSetChForInvalidChannel/"100"" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-13/22 Testing: InvalidChannels/TunerInvalidChannelTest.testSetChForInvalidChannel/"9999"
-13/22 Test: InvalidChannels/TunerInvalidChannelTest.testSetChForInvalidChannel/"9999"
+13/23 Testing: InvalidChannels/TunerInvalidChannelTest.testSetChForInvalidChannel/"9999"
+13/23 Test: InvalidChannels/TunerInvalidChannelTest.testSetChForInvalidChannel/"9999"
 Command: "C:/DEV/1-15.TDD_TV_10/build/TunerTest.exe" "--gtest_filter=InvalidChannels/TunerInvalidChannelTest.testSetChForInvalidChannel/4" "--gtest_also_run_disabled_tests"
 Directory: C:/DEV/1-15.TDD_TV_10/build
-"InvalidChannels/TunerInvalidChannelTest.testSetChForInvalidChannel/"9999"" start time: May 15 19:19 대한민국 표준시
+"InvalidChannels/TunerInvalidChannelTest.testSetChForInvalidChannel/"9999"" start time: May 15 19:33 대한민국 표준시
 Output:
 ----------------------------------------------------------
 Running main() from C:\DEV\1-15.TDD_TV_10\build\_deps\googletest-src\googletest\src\gtest_main.cc
@@ -347,15 +347,15 @@ Note: Google Test filter = InvalidChannels/TunerInvalidChannelTest.testSetChForI
 Test time =   0.03 sec
 ----------------------------------------------------------
 Test Passed.
-"InvalidChannels/TunerInvalidChannelTest.testSetChForInvalidChannel/"9999"" end time: May 15 19:19 대한민국 표준시
+"InvalidChannels/TunerInvalidChannelTest.testSetChForInvalidChannel/"9999"" end time: May 15 19:33 대한민국 표준시
 "InvalidChannels/TunerInvalidChannelTest.testSetChForInvalidChannel/"9999"" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-14/22 Testing: ControllerTest.OneDigitWithConfirm
-14/22 Test: ControllerTest.OneDigitWithConfirm
+14/23 Testing: ControllerTest.OneDigitWithConfirm
+14/23 Test: ControllerTest.OneDigitWithConfirm
 Command: "C:/DEV/1-15.TDD_TV_10/build/TVControllerTest.exe" "--gtest_filter=ControllerTest.OneDigitWithConfirm" "--gtest_also_run_disabled_tests"
 Directory: C:/DEV/1-15.TDD_TV_10/build
-"ControllerTest.OneDigitWithConfirm" start time: May 15 19:19 대한민국 표준시
+"ControllerTest.OneDigitWithConfirm" start time: May 15 19:33 대한민국 표준시
 Output:
 ----------------------------------------------------------
 Running main() from C:\DEV\1-15.TDD_TV_10\build\_deps\googletest-src\googletest\src\gtest_main.cc
@@ -374,15 +374,15 @@ Note: Google Test filter = ControllerTest.OneDigitWithConfirm
 Test time =   0.03 sec
 ----------------------------------------------------------
 Test Passed.
-"ControllerTest.OneDigitWithConfirm" end time: May 15 19:19 대한민국 표준시
+"ControllerTest.OneDigitWithConfirm" end time: May 15 19:33 대한민국 표준시
 "ControllerTest.OneDigitWithConfirm" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-15/22 Testing: ControllerTest.TwoDigitAutoChange
-15/22 Test: ControllerTest.TwoDigitAutoChange
+15/23 Testing: ControllerTest.TwoDigitAutoChange
+15/23 Test: ControllerTest.TwoDigitAutoChange
 Command: "C:/DEV/1-15.TDD_TV_10/build/TVControllerTest.exe" "--gtest_filter=ControllerTest.TwoDigitAutoChange" "--gtest_also_run_disabled_tests"
 Directory: C:/DEV/1-15.TDD_TV_10/build
-"ControllerTest.TwoDigitAutoChange" start time: May 15 19:19 대한민국 표준시
+"ControllerTest.TwoDigitAutoChange" start time: May 15 19:33 대한민국 표준시
 Output:
 ----------------------------------------------------------
 Running main() from C:\DEV\1-15.TDD_TV_10\build\_deps\googletest-src\googletest\src\gtest_main.cc
@@ -401,15 +401,15 @@ Note: Google Test filter = ControllerTest.TwoDigitAutoChange
 Test time =   0.03 sec
 ----------------------------------------------------------
 Test Passed.
-"ControllerTest.TwoDigitAutoChange" end time: May 15 19:19 대한민국 표준시
+"ControllerTest.TwoDigitAutoChange" end time: May 15 19:33 대한민국 표준시
 "ControllerTest.TwoDigitAutoChange" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-16/22 Testing: ControllerTest.ThreeDigitInput
-16/22 Test: ControllerTest.ThreeDigitInput
+16/23 Testing: ControllerTest.ThreeDigitInput
+16/23 Test: ControllerTest.ThreeDigitInput
 Command: "C:/DEV/1-15.TDD_TV_10/build/TVControllerTest.exe" "--gtest_filter=ControllerTest.ThreeDigitInput" "--gtest_also_run_disabled_tests"
 Directory: C:/DEV/1-15.TDD_TV_10/build
-"ControllerTest.ThreeDigitInput" start time: May 15 19:19 대한민국 표준시
+"ControllerTest.ThreeDigitInput" start time: May 15 19:33 대한민국 표준시
 Output:
 ----------------------------------------------------------
 Running main() from C:\DEV\1-15.TDD_TV_10\build\_deps\googletest-src\googletest\src\gtest_main.cc
@@ -428,15 +428,15 @@ Note: Google Test filter = ControllerTest.ThreeDigitInput
 Test time =   0.03 sec
 ----------------------------------------------------------
 Test Passed.
-"ControllerTest.ThreeDigitInput" end time: May 15 19:19 대한민국 표준시
+"ControllerTest.ThreeDigitInput" end time: May 15 19:33 대한민국 표준시
 "ControllerTest.ThreeDigitInput" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-17/22 Testing: ControllerTest.LeadingZeroTwoDigit
-17/22 Test: ControllerTest.LeadingZeroTwoDigit
+17/23 Testing: ControllerTest.LeadingZeroTwoDigit
+17/23 Test: ControllerTest.LeadingZeroTwoDigit
 Command: "C:/DEV/1-15.TDD_TV_10/build/TVControllerTest.exe" "--gtest_filter=ControllerTest.LeadingZeroTwoDigit" "--gtest_also_run_disabled_tests"
 Directory: C:/DEV/1-15.TDD_TV_10/build
-"ControllerTest.LeadingZeroTwoDigit" start time: May 15 19:19 대한민국 표준시
+"ControllerTest.LeadingZeroTwoDigit" start time: May 15 19:33 대한민국 표준시
 Output:
 ----------------------------------------------------------
 Running main() from C:\DEV\1-15.TDD_TV_10\build\_deps\googletest-src\googletest\src\gtest_main.cc
@@ -455,15 +455,15 @@ Note: Google Test filter = ControllerTest.LeadingZeroTwoDigit
 Test time =   0.03 sec
 ----------------------------------------------------------
 Test Passed.
-"ControllerTest.LeadingZeroTwoDigit" end time: May 15 19:19 대한민국 표준시
+"ControllerTest.LeadingZeroTwoDigit" end time: May 15 19:33 대한민국 표준시
 "ControllerTest.LeadingZeroTwoDigit" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-18/22 Testing: ControllerTest.FourDigitInput
-18/22 Test: ControllerTest.FourDigitInput
+18/23 Testing: ControllerTest.FourDigitInput
+18/23 Test: ControllerTest.FourDigitInput
 Command: "C:/DEV/1-15.TDD_TV_10/build/TVControllerTest.exe" "--gtest_filter=ControllerTest.FourDigitInput" "--gtest_also_run_disabled_tests"
 Directory: C:/DEV/1-15.TDD_TV_10/build
-"ControllerTest.FourDigitInput" start time: May 15 19:19 대한민국 표준시
+"ControllerTest.FourDigitInput" start time: May 15 19:33 대한민국 표준시
 Output:
 ----------------------------------------------------------
 Running main() from C:\DEV\1-15.TDD_TV_10\build\_deps\googletest-src\googletest\src\gtest_main.cc
@@ -482,15 +482,15 @@ Note: Google Test filter = ControllerTest.FourDigitInput
 Test time =   0.03 sec
 ----------------------------------------------------------
 Test Passed.
-"ControllerTest.FourDigitInput" end time: May 15 19:19 대한민국 표준시
+"ControllerTest.FourDigitInput" end time: May 15 19:33 대한민국 표준시
 "ControllerTest.FourDigitInput" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-19/22 Testing: ControllerTest.BoundaryChannel99
-19/22 Test: ControllerTest.BoundaryChannel99
+19/23 Testing: ControllerTest.BoundaryChannel99
+19/23 Test: ControllerTest.BoundaryChannel99
 Command: "C:/DEV/1-15.TDD_TV_10/build/TVControllerTest.exe" "--gtest_filter=ControllerTest.BoundaryChannel99" "--gtest_also_run_disabled_tests"
 Directory: C:/DEV/1-15.TDD_TV_10/build
-"ControllerTest.BoundaryChannel99" start time: May 15 19:19 대한민국 표준시
+"ControllerTest.BoundaryChannel99" start time: May 15 19:33 대한민국 표준시
 Output:
 ----------------------------------------------------------
 Running main() from C:\DEV\1-15.TDD_TV_10\build\_deps\googletest-src\googletest\src\gtest_main.cc
@@ -509,15 +509,15 @@ Note: Google Test filter = ControllerTest.BoundaryChannel99
 Test time =   0.03 sec
 ----------------------------------------------------------
 Test Passed.
-"ControllerTest.BoundaryChannel99" end time: May 15 19:19 대한민국 표준시
+"ControllerTest.BoundaryChannel99" end time: May 15 19:33 대한민국 표준시
 "ControllerTest.BoundaryChannel99" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-20/22 Testing: ControllerTest.BoundaryChannel00
-20/22 Test: ControllerTest.BoundaryChannel00
+20/23 Testing: ControllerTest.BoundaryChannel00
+20/23 Test: ControllerTest.BoundaryChannel00
 Command: "C:/DEV/1-15.TDD_TV_10/build/TVControllerTest.exe" "--gtest_filter=ControllerTest.BoundaryChannel00" "--gtest_also_run_disabled_tests"
 Directory: C:/DEV/1-15.TDD_TV_10/build
-"ControllerTest.BoundaryChannel00" start time: May 15 19:19 대한민국 표준시
+"ControllerTest.BoundaryChannel00" start time: May 15 19:33 대한민국 표준시
 Output:
 ----------------------------------------------------------
 Running main() from C:\DEV\1-15.TDD_TV_10\build\_deps\googletest-src\googletest\src\gtest_main.cc
@@ -536,15 +536,15 @@ Note: Google Test filter = ControllerTest.BoundaryChannel00
 Test time =   0.03 sec
 ----------------------------------------------------------
 Test Passed.
-"ControllerTest.BoundaryChannel00" end time: May 15 19:19 대한민국 표준시
+"ControllerTest.BoundaryChannel00" end time: May 15 19:33 대한민국 표준시
 "ControllerTest.BoundaryChannel00" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-21/22 Testing: ControllerTest.BoundaryChannel09
-21/22 Test: ControllerTest.BoundaryChannel09
+21/23 Testing: ControllerTest.BoundaryChannel09
+21/23 Test: ControllerTest.BoundaryChannel09
 Command: "C:/DEV/1-15.TDD_TV_10/build/TVControllerTest.exe" "--gtest_filter=ControllerTest.BoundaryChannel09" "--gtest_also_run_disabled_tests"
 Directory: C:/DEV/1-15.TDD_TV_10/build
-"ControllerTest.BoundaryChannel09" start time: May 15 19:19 대한민국 표준시
+"ControllerTest.BoundaryChannel09" start time: May 15 19:33 대한민국 표준시
 Output:
 ----------------------------------------------------------
 Running main() from C:\DEV\1-15.TDD_TV_10\build\_deps\googletest-src\googletest\src\gtest_main.cc
@@ -563,15 +563,42 @@ Note: Google Test filter = ControllerTest.BoundaryChannel09
 Test time =   0.03 sec
 ----------------------------------------------------------
 Test Passed.
-"ControllerTest.BoundaryChannel09" end time: May 15 19:19 대한민국 표준시
+"ControllerTest.BoundaryChannel09" end time: May 15 19:33 대한민국 표준시
 "ControllerTest.BoundaryChannel09" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-22/22 Testing: TVControllerApprovalTest.VerifyAllScenarios
-22/22 Test: TVControllerApprovalTest.VerifyAllScenarios
+22/23 Testing: ControllerTest.SeekCHCall
+22/23 Test: ControllerTest.SeekCHCall
+Command: "C:/DEV/1-15.TDD_TV_10/build/TVControllerTest.exe" "--gtest_filter=ControllerTest.SeekCHCall" "--gtest_also_run_disabled_tests"
+Directory: C:/DEV/1-15.TDD_TV_10/build
+"ControllerTest.SeekCHCall" start time: May 15 19:33 대한민국 표준시
+Output:
+----------------------------------------------------------
+Running main() from C:\DEV\1-15.TDD_TV_10\build\_deps\googletest-src\googletest\src\gtest_main.cc
+Note: Google Test filter = ControllerTest.SeekCHCall
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from ControllerTest
+[ RUN      ] ControllerTest.SeekCHCall
+[       OK ] ControllerTest.SeekCHCall (0 ms)
+[----------] 1 test from ControllerTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Passed.
+"ControllerTest.SeekCHCall" end time: May 15 19:33 대한민국 표준시
+"ControllerTest.SeekCHCall" time elapsed: 00:00:00
+----------------------------------------------------------
+
+23/23 Testing: TVControllerApprovalTest.VerifyAllScenarios
+23/23 Test: TVControllerApprovalTest.VerifyAllScenarios
 Command: "C:/DEV/1-15.TDD_TV_10/build/TVControllerTestApprovalTests.exe" "--gtest_filter=TVControllerApprovalTest.VerifyAllScenarios" "--gtest_also_run_disabled_tests"
 Directory: C:/DEV/1-15.TDD_TV_10/build
-"TVControllerApprovalTest.VerifyAllScenarios" start time: May 15 19:19 대한민국 표준시
+"TVControllerApprovalTest.VerifyAllScenarios" start time: May 15 19:33 대한민국 표준시
 Output:
 ----------------------------------------------------------
 Note: Google Test filter = TVControllerApprovalTest.VerifyAllScenarios
@@ -579,18 +606,18 @@ Note: Google Test filter = TVControllerApprovalTest.VerifyAllScenarios
 [----------] Global test environment set-up.
 [----------] 1 test from TVControllerApprovalTest
 [ RUN      ] TVControllerApprovalTest.VerifyAllScenarios
-[       OK ] TVControllerApprovalTest.VerifyAllScenarios (11 ms)
-[----------] 1 test from TVControllerApprovalTest (14 ms total)
+[       OK ] TVControllerApprovalTest.VerifyAllScenarios (7 ms)
+[----------] 1 test from TVControllerApprovalTest (10 ms total)
 
 [----------] Global test environment tear-down
-[==========] 1 test from 1 test suite ran. (16 ms total)
+[==========] 1 test from 1 test suite ran. (11 ms total)
 [  PASSED  ] 1 test.
 <end of output>
-Test time =   0.06 sec
+Test time =   0.05 sec
 ----------------------------------------------------------
 Test Passed.
-"TVControllerApprovalTest.VerifyAllScenarios" end time: May 15 19:19 대한민국 표준시
+"TVControllerApprovalTest.VerifyAllScenarios" end time: May 15 19:33 대한민국 표준시
 "TVControllerApprovalTest.VerifyAllScenarios" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-End testing: May 15 19:19 대한민국 표준시
+End testing: May 15 19:33 대한민국 표준시

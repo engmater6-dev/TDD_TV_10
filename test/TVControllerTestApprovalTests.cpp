@@ -119,5 +119,28 @@ TEST(TVControllerApprovalTest, VerifyAllScenarios) {
     outputs.push_back("Boundary09:\n" + oss.str());
   }
 
+  // S1-9: seekCH, getCurrentCH 호출 테스트
+  {
+    FakeTunerForApproval tuner;
+    TVController ctrl(tuner);
+    std::ostringstream oss;
+    auto oldBuf = std::cout.rdbuf(oss.rdbuf());
+
+    // 기본 동작
+    ctrl.pushButton(remoteKey::KEY_1);
+    ctrl.pushButton(remoteKey::KEY_OK);
+
+    // 누락된 메서드 호출
+    std::string seekResult = tuner.seekCH();
+    std::string currentResult = tuner.getCurrentCH();
+
+    // 출력에 기록
+    std::cout << "seekCH returned: " << seekResult << std::endl;
+    std::cout << "getCurrentCH returned: " << currentResult << std::endl;
+
+    std::cout.rdbuf(oldBuf);
+    outputs.push_back("SeekAndGetCurrentCH:\n" + oss.str());
+  }
+
   ApprovalTests::Approvals::verifyAll("TVController scenarios", outputs);
 }
