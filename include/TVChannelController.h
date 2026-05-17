@@ -3,11 +3,14 @@
 #include <string>
 #include <vector>
 
+// 매직 넘버 상수화 (헤더에만 정의)
+constexpr int MAX_CHANNEL = 99;
+constexpr int MIN_CHANNEL = 0;
 
 class TVChannelController {
   ITuner &tuner_;
-  std::vector<int> buffer_;           // ✅ 숫자 입력 버퍼
-  std::vector<int> favoriteChannels_; // ✅ 즐겨찾기 채널 목록
+  std::vector<int> buffer_;           // 숫자 입력 버퍼
+  std::vector<int> favoriteChannels_; // 즐겨찾기 채널 목록
 
 public:
   explicit TVChannelController(ITuner &tuner) : tuner_(tuner) {}
@@ -31,7 +34,10 @@ public:
 
   // 내부 동작
   void applyChannel(int ch);
-  bool isValidChannel(int ch) const; // ✅ const 유지
+  bool isValidChannel(int ch) const;
+
+  // 현재 채널 조회 (중복 제거용 헬퍼 함수)
+  int getCurrentChannel() const;
 
   // 즐겨찾기 목록 조회 (불변 참조 반환)
   const std::vector<int> &getFavoriteChannels() const {
