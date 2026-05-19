@@ -10,14 +10,14 @@
 
 4. Tuner 업체에서 Channel tuner를 제공한다. 따라서 구체적인 구현이나 테스트 코드를 우리가 작성하는 상황은 아닙니다. 
 
-    * seekCH() :  현재 채널에서 숫자가 증가하는 방향으로 시청 가능한 채널을 검색하여,  
-                  채널을 검색된 채널로 변경하고 검색된 채널값을 반환한다.  
-    * setCH(ch) : 지정된 채널값으로 현재 채널을 변경한다.  
-    * getCurrentCH() : 현재 설정된 채널 값을 반환한다.
+    * `seek_ch()` :  현재 채널에서 숫자가 증가하는 방향으로 시청 가능한 채널을 검색하여,  
+                     채널을 검색된 채널로 변경하고 검색된 채널값을 반환한다.  
+    * `set_ch(ch)` : 지정된 채널값으로 현재 채널을 변경한다.  
+    * `get_current_ch()` : 현재 설정된 채널 값을 반환한다.
    
-   본 실습에서 Tuner는입력에 대해 정확하게 동작한다고 가정하고 기타 개발 코드를 테스트 해야 하는 상황입니다. 
-   Fake 또는 Mock을 사용하여 테스트 진행에 문제없도록 해야 합니다.     
-   제공된 TunerTest.cpp를 참조한다면 Mock을 사용했을 때 필요한 기능을 좀 더 이해할 수 있습니다. Fake를 사용한 경우에도 필요한 기능을 참고할 수 있습니다.  
+   본 실습에서 Tuner는 입력에 대해 정확하게 동작한다고 가정하고 기타 개발 코드를 테스트 해야 하는 상황입니다. 
+   Mock(`unittest.mock`)을 사용하여 테스트 진행에 문제없도록 해야 합니다.     
+   제공된 `test/test_tuner.py`를 참조한다면 Mock을 사용했을 때 필요한 기능을 좀 더 이해할 수 있습니다. Fake를 사용한 경우에도 필요한 기능을 참고할 수 있습니다.  
   
   
 ## TDD practice 를 적용하여, 잘 구조화된 Controller 모듈을 만들어라.
@@ -59,3 +59,46 @@
         * 채널 6을 시청중, 채널 업을 누르면 14로 변경, 다운을 누르면 4로 변경된다.  
         * 채널 15를 시청중, 채널 업을 누르면 4로 변경, 다운을 누르면 14로 변경된다.  
   
+
+## 실행 방법 (가상환경)
+
+### 1. 가상환경 생성
+
+```bash
+python -m venv venv
+```
+
+### 2. 가상환경 활성화
+
+**Windows (cmd)**
+```cmd
+venv\Scripts\activate.bat
+```
+
+**Windows (PowerShell)**
+```powershell
+venv\Scripts\Activate.ps1
+```
+
+**macOS / Linux**
+```bash
+source venv/bin/activate
+```
+
+### 3. 의존성 설치
+
+```bash
+pip install -r requirements.txt
+```
+
+### 4. 테스트 실행
+
+```bash
+pytest
+```
+
+### 5. 가상환경 비활성화
+
+```bash
+deactivate
+```
